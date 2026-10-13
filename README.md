@@ -17,3 +17,8 @@
 - Facebook page: `https://www.facebook.com/thaiymuan` (ຢູ່ `<footer>`)
 - WhatsApp: ໃຊ້ `https://wa.me/8562055959236` (ເປີດແຊັດໂດຍກົງ ພ້ອມຂໍ້ຄວາມຕັ້ງຕົ້ນ)
 - ສີ ແລະ ຟອນ: ແກ້ຢູ່ `:root` ດ້ານເທິງຂອງ `<style>`
+
+## ຟອນ
+ໃຊ້ stack ດຽວ `--sans: "Roboto","Noto Sans Lao",sans-serif` — ຕົວອັກສອນອັງກິດ/ເລກ
+ໃຊ້ **Roboto**, ຕົວອັກສອນລາວ browser ຈະ fall back ໄປ **Noto Sans Lao** ໃຫ້ອັດຕະໂນມັດ
+(ເພາະ Roboto ບໍ່ມີ glyph ລາວ). ນ້ຳໜັກຟອນຂອງຫົວຂໍ້/ລາຄາ ປັບຢູ່ບ່ອນ `TYPE TUNING`.

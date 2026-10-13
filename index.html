@@ -7,7 +7,7 @@
 <meta name="description" content="Thaiymuan Production — ແພ໊ກເກັດຖ່າຍຮູບ ແລະ ຖ່າຍວິດີໂອງານດອງ. ລາຄາ ແລະ ລາຍລະອຽດຄົບຖ້ວນ. ຕິດຕໍ່ 020 55959236">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Italiana&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Noto+Sans+Lao:wght@300;400;500;600&family=Noto+Serif+Lao:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Lao:wght@200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
 <style>
 :root{
   --paper:#f7f2e8;
@@ -17,10 +17,12 @@
   --gold:#a8793f;
   --gold-light:#c9a26a;
   --rule:rgba(27,23,20,.14);
-  --lao:"Noto Sans Lao",sans-serif;
-  --lao-serif:"Noto Serif Lao",serif;
-  --display:"Italiana",serif;
-  --latin:"Cormorant Garamond",serif;
+  /* Latin ໃຊ້ Roboto · ຕົວອັກສອນລາວ fall back ໄປ Noto Sans Lao ອັດຕະໂນມັດ */
+  --sans:"Roboto","Noto Sans Lao",sans-serif;
+  --lao:var(--sans);
+  --lao-serif:var(--sans);
+  --display:var(--sans);
+  --latin:var(--sans);
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
@@ -182,6 +184,14 @@ footer .social a small{display:block;font-family:var(--latin);letter-spacing:.2e
 footer .social a .lbl{text-align:left;line-height:1.35}
 footer .fine{margin-top:2.6rem;font-family:var(--latin);letter-spacing:.26em;
   text-transform:uppercase;font-size:.6rem;color:var(--ink-soft);opacity:.7}
+
+/* ---------- TYPE TUNING (Roboto + Noto Sans Lao) ---------- */
+.hero h1{font-weight:300}
+.hero h1 em{font-weight:100;letter-spacing:.14em;text-transform:uppercase}
+.sec-num,.card .idx,.price .v,.addon .amt em,footer .mark,footer .contact a.tel{font-weight:100}
+footer .mark{letter-spacing:.14em;text-transform:uppercase}
+.sec-title,.card h3{font-weight:500}
+.time,.addon .txt span,.price .c,.addon .amt b{font-weight:300}
 
 /* ---------- REVEAL ---------- */
 .rv{opacity:0;transform:translateY(26px);transition:opacity 1s ease,transform 1s cubic-bezier(.2,.8,.2,1)}
