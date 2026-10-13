@@ -39,3 +39,14 @@ stack ດຽວ `--sans: "Roboto","Noto Sans Lao",sans-serif` — ອັງກ�
 | ສີ / ຂອບມົນ / ເງົາ | `:root` ດ້ານເທິງຂອງ `<style>` |
 | ເບີໂທ (3 ບ່ອນ: contact, mobile bar) | ຄົ້ນຫາ `8562055959236` |
 | Facebook | `https://www.facebook.com/thaiymuan` |
+
+## ໂລໂກ້ (`logo/`)
+| ໄຟລ໌ | ໃຊ້ບ່ອນໃດ |
+|---|---|
+| `ຖ່າຍມ່ວນ signager.png` | ຕົ້ນສະບັບ 6657×2750 (ບໍ່ໄດ້ໃຊ້ໃນເວັບໂດຍກົງ) |
+| `wordmark.png` | nav, hero, contact, footer (ຂາວ ພື້ນໂປ່ງໃສ 1000px) |
+| `favicon.png` | icon ຢູ່ tab ຂອງ browser |
+| `apple-touch-icon.png` | icon ຕອນບັນທືກໃສ່ home screen ມືຖື |
+| `og-image.jpg` | ຮູບຕອນແຊຣ໌ link ໃນ Facebook / WhatsApp |
+
+ຖ້າປ່ຽນໂລໂກ້ໃໝ່ ໃຫ້ແທນທີ່ `wordmark.png` ດ້ວຍ PNG **ສີຂາວ ພື້ນໂປ່ງໃສ** (ເພາະເວັບເປັນພື້ນດຳ).
