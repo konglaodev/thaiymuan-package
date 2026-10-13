@@ -277,6 +277,21 @@ footer{border-top:1px solid var(--line);padding:2.4rem 0 calc(2.4rem + env(safe-
 }
 .mbar .btn{flex:1;padding:.85rem 1rem}
 
+/* ===================== TOAST ===================== */
+.toast{
+  position:fixed;left:50%;bottom:calc(22px + env(safe-area-inset-bottom));
+  transform:translate(-50%,16px);z-index:80;
+  display:flex;align-items:center;gap:.6rem;
+  padding:.8rem 1.2rem;border-radius:999px;
+  background:var(--panel-2);border:1px solid var(--line-2);
+  color:var(--text);font-size:.88rem;white-space:nowrap;
+  box-shadow:var(--shadow);opacity:0;pointer-events:none;
+  transition:opacity .35s var(--ease),transform .35s var(--ease);
+}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+.toast svg{width:16px;height:16px;stroke:var(--gold);stroke-width:2;fill:none;flex:none}
+@media (max-width:720px){.toast{bottom:calc(86px + env(safe-area-inset-bottom))}}
+
 /* ===================== REVEAL ===================== */
 .rv{opacity:0;transform:translateY(22px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
 .rv.in{opacity:1;transform:none}
@@ -642,6 +657,11 @@ footer{border-top:1px solid var(--line);padding:2.4rem 0 calc(2.4rem + env(safe-
   </a>
 </div>
 
+<div class="toast" id="toast" role="status" aria-live="polite">
+  <svg viewBox="0 0 24 24"><path d="M4 12.5 9 17.5 20 6.5"/></svg>
+  <span id="toast-msg"></span>
+</div>
+
 <script>
 // year
 document.getElementById('yr').textContent = new Date().getFullYear();
@@ -662,6 +682,30 @@ tabs.forEach(tab => {
       pane.hidden = !on;
       if (on) { pane.classList.remove('in'); requestAnimationFrame(() => pane.classList.add('rv','in')); }
     });
+  });
+});
+
+// ປຸ່ມໂທ: ມືຖືໂທໄດ້ເລີຍ · desktop ຄັດລອກເບີໃຫ້ແທນ
+const PHONE_DISPLAY = '020 55959236';
+const toastEl = document.getElementById('toast');
+const toastMsg = document.getElementById('toast-msg');
+let toastTimer;
+function toast(msg){
+  toastMsg.textContent = msg;
+  toastEl.classList.add('show');
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => toastEl.classList.remove('show'), 3200);
+}
+const canDial = matchMedia('(hover:none) and (pointer:coarse)').matches;
+document.querySelectorAll('a[href^="tel:"]').forEach(a => {
+  a.addEventListener('click', e => {
+    if (canDial) return;                       // ມືຖື / tablet → ປ່ອຍໃຫ້ໂທປົກກະຕິ
+    e.preventDefault();
+    const done = () => toast('ຄັດລອກເບີແລ້ວ · ' + PHONE_DISPLAY);
+    const fail = () => toast('ເບີໂທ: ' + PHONE_DISPLAY);
+    if (navigator.clipboard?.writeText) {
+      navigator.clipboard.writeText(PHONE_DISPLAY).then(done).catch(fail);
+    } else { fail(); }
   });
 });
 
