@@ -207,6 +207,8 @@ if (albumsEl){
     album = a;
     document.getElementById('albumTitle').textContent = a.title;
     document.getElementById('albumDesc').textContent  = a.desc;
+    const link = document.getElementById('albumPost');
+    if (a.post){ link.href = a.post; link.hidden = false; } else { link.hidden = true; }
     shotsEl.innerHTML = a.photos.map((ph, i) => `
       <button type="button" data-i="${i}">
         <img src="${ph.thumb}" alt="${a.title} ${i + 1}" loading="lazy" width="${ph.w}" height="${ph.h}">

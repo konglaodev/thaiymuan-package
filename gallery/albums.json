@@ -1,98 +1,184 @@
 {
  "albums": [
   {
-   "id": "wedding-reception",
-   "title": "ງານດອງ — ຕ້ອນຮັບ ແລະ ງານລ້ຽງ",
-   "desc": "ຊ່ວງຕ້ອນຮັບແຂກ ແລະ ງານລ້ຽງຕອນແລງ",
-   "cover": "gallery/wedding-reception/01-t.jpg",
+   "id": "phomma-dokmali",
+   "title": "Phomma — Dokmali",
+   "desc": "Wedding ceremony · 8 ພຶດສະພາ",
+   "cover": "gallery/phomma-dokmali/01-t.jpg",
    "photos": [
     {
-     "src": "gallery/wedding-reception/01.jpg",
-     "thumb": "gallery/wedding-reception/01-t.jpg",
-     "w": 414,
-     "h": 414
+     "src": "gallery/phomma-dokmali/01.jpg",
+     "thumb": "gallery/phomma-dokmali/01-t.jpg",
+     "w": 1066,
+     "h": 1600
     },
     {
-     "src": "gallery/wedding-reception/02.jpg",
-     "thumb": "gallery/wedding-reception/02-t.jpg",
-     "w": 414,
-     "h": 414
+     "src": "gallery/phomma-dokmali/02.jpg",
+     "thumb": "gallery/phomma-dokmali/02-t.jpg",
+     "w": 1066,
+     "h": 1600
     },
     {
-     "src": "gallery/wedding-reception/03.jpg",
-     "thumb": "gallery/wedding-reception/03-t.jpg",
+     "src": "gallery/phomma-dokmali/03.jpg",
+     "thumb": "gallery/phomma-dokmali/03-t.jpg",
+     "w": 1066,
+     "h": 1600
+    },
+    {
+     "src": "gallery/phomma-dokmali/04.jpg",
+     "thumb": "gallery/phomma-dokmali/04-t.jpg",
+     "w": 1066,
+     "h": 1600
+    },
+    {
+     "src": "gallery/phomma-dokmali/05.jpg",
+     "thumb": "gallery/phomma-dokmali/05-t.jpg",
      "w": 843,
      "h": 1265
     },
     {
-     "src": "gallery/wedding-reception/04.jpg",
-     "thumb": "gallery/wedding-reception/04-t.jpg",
-     "w": 414,
-     "h": 414
-    },
-    {
-     "src": "gallery/wedding-reception/05.jpg",
-     "thumb": "gallery/wedding-reception/05-t.jpg",
-     "w": 414,
-     "h": 414
-    },
-    {
-     "src": "gallery/wedding-reception/06.jpg",
-     "thumb": "gallery/wedding-reception/06-t.jpg",
-     "w": 414,
-     "h": 414
-    },
-    {
-     "src": "gallery/wedding-reception/07.jpg",
-     "thumb": "gallery/wedding-reception/07-t.jpg",
-     "w": 414,
-     "h": 414
-    },
-    {
-     "src": "gallery/wedding-reception/08.jpg",
-     "thumb": "gallery/wedding-reception/08-t.jpg",
-     "w": 414,
-     "h": 414
-    },
-    {
-     "src": "gallery/wedding-reception/09.jpg",
-     "thumb": "gallery/wedding-reception/09-t.jpg",
-     "w": 315,
-     "h": 315
-    },
-    {
-     "src": "gallery/wedding-reception/10.jpg",
-     "thumb": "gallery/wedding-reception/10-t.jpg",
-     "w": 843,
-     "h": 1265
+     "src": "gallery/phomma-dokmali/06.jpg",
+     "thumb": "gallery/phomma-dokmali/06-t.jpg",
+     "w": 1600,
+     "h": 1066
     }
-   ]
+   ],
+   "post": "https://www.facebook.com/share/p/1Di45Udweh/"
   },
   {
-   "id": "wedding-lao",
-   "title": "ງານດອງຊຸດລາວ · 27.06.2026",
-   "desc": "ຊຸດລາວເຕັມຮູບແບບ ຖ່າຍໃນສະຕູດິໂອ ແລະ ໜ້າງານ",
-   "cover": "gallery/wedding-lao/01-t.jpg",
+   "id": "vannapha-phonesavanh-baci",
+   "title": "Vannapha & Phonesavanh · ພິທີສູ່ຂວັນ",
+   "desc": "Wedding ceremony 27/06/26 · 12 ກໍລະກົດ",
+   "cover": "gallery/vannapha-phonesavanh-baci/01-t.jpg",
    "photos": [
     {
-     "src": "gallery/wedding-lao/01.jpg",
-     "thumb": "gallery/wedding-lao/01-t.jpg",
-     "w": 843,
-     "h": 1265
+     "src": "gallery/vannapha-phonesavanh-baci/01.jpg",
+     "thumb": "gallery/vannapha-phonesavanh-baci/01-t.jpg",
+     "w": 1066,
+     "h": 1600
     },
     {
-     "src": "gallery/wedding-lao/02.jpg",
-     "thumb": "gallery/wedding-lao/02-t.jpg",
-     "w": 843,
-     "h": 1265
+     "src": "gallery/vannapha-phonesavanh-baci/02.jpg",
+     "thumb": "gallery/vannapha-phonesavanh-baci/02-t.jpg",
+     "w": 1066,
+     "h": 1600
     },
     {
-     "src": "gallery/wedding-lao/03.jpg",
-     "thumb": "gallery/wedding-lao/03-t.jpg",
-     "w": 843,
-     "h": 1265
+     "src": "gallery/vannapha-phonesavanh-baci/03.jpg",
+     "thumb": "gallery/vannapha-phonesavanh-baci/03-t.jpg",
+     "w": 1066,
+     "h": 1600
+    },
+    {
+     "src": "gallery/vannapha-phonesavanh-baci/04.jpg",
+     "thumb": "gallery/vannapha-phonesavanh-baci/04-t.jpg",
+     "w": 1440,
+     "h": 960
+    },
+    {
+     "src": "gallery/vannapha-phonesavanh-baci/05.jpg",
+     "thumb": "gallery/vannapha-phonesavanh-baci/05-t.jpg",
+     "w": 1066,
+     "h": 1600
+    },
+    {
+     "src": "gallery/vannapha-phonesavanh-baci/06.jpg",
+     "thumb": "gallery/vannapha-phonesavanh-baci/06-t.jpg",
+     "w": 1066,
+     "h": 1600
     }
-   ]
+   ],
+   "post": "https://www.facebook.com/share/p/19uCGzUGPr/"
+  },
+  {
+   "id": "vannapha-phonesavanh-portrait",
+   "title": "Vannapha & Phonesavanh · ຊຸດລາວ ແລະ ຊຸດເຈົ້າສາວ",
+   "desc": "Wedding ceremony · 15 ກໍລະກົດ",
+   "cover": "gallery/vannapha-phonesavanh-portrait/01-t.jpg",
+   "photos": [
+    {
+     "src": "gallery/vannapha-phonesavanh-portrait/01.jpg",
+     "thumb": "gallery/vannapha-phonesavanh-portrait/01-t.jpg",
+     "w": 1066,
+     "h": 1600
+    },
+    {
+     "src": "gallery/vannapha-phonesavanh-portrait/02.jpg",
+     "thumb": "gallery/vannapha-phonesavanh-portrait/02-t.jpg",
+     "w": 1066,
+     "h": 1600
+    },
+    {
+     "src": "gallery/vannapha-phonesavanh-portrait/03.jpg",
+     "thumb": "gallery/vannapha-phonesavanh-portrait/03-t.jpg",
+     "w": 843,
+     "h": 1265
+    },
+    {
+     "src": "gallery/vannapha-phonesavanh-portrait/04.jpg",
+     "thumb": "gallery/vannapha-phonesavanh-portrait/04-t.jpg",
+     "w": 1066,
+     "h": 1600
+    },
+    {
+     "src": "gallery/vannapha-phonesavanh-portrait/05.jpg",
+     "thumb": "gallery/vannapha-phonesavanh-portrait/05-t.jpg",
+     "w": 1066,
+     "h": 1600
+    },
+    {
+     "src": "gallery/vannapha-phonesavanh-portrait/06.jpg",
+     "thumb": "gallery/vannapha-phonesavanh-portrait/06-t.jpg",
+     "w": 1066,
+     "h": 1600
+    }
+   ],
+   "post": "https://www.facebook.com/share/p/1DqXiJqCiy/"
+  },
+  {
+   "id": "nico-mimie",
+   "title": "Nico V Sanaphanh & Mimie Sirikool",
+   "desc": "Wedding ceremony · Asean Palace · 13 ພະຈິກ 2025",
+   "cover": "gallery/nico-mimie/01-t.jpg",
+   "photos": [
+    {
+     "src": "gallery/nico-mimie/01.jpg",
+     "thumb": "gallery/nico-mimie/01-t.jpg",
+     "w": 1066,
+     "h": 1600
+    },
+    {
+     "src": "gallery/nico-mimie/02.jpg",
+     "thumb": "gallery/nico-mimie/02-t.jpg",
+     "w": 1066,
+     "h": 1600
+    },
+    {
+     "src": "gallery/nico-mimie/03.jpg",
+     "thumb": "gallery/nico-mimie/03-t.jpg",
+     "w": 843,
+     "h": 1265
+    },
+    {
+     "src": "gallery/nico-mimie/04.jpg",
+     "thumb": "gallery/nico-mimie/04-t.jpg",
+     "w": 1600,
+     "h": 1066
+    },
+    {
+     "src": "gallery/nico-mimie/05.jpg",
+     "thumb": "gallery/nico-mimie/05-t.jpg",
+     "w": 1600,
+     "h": 1066
+    },
+    {
+     "src": "gallery/nico-mimie/06.jpg",
+     "thumb": "gallery/nico-mimie/06-t.jpg",
+     "w": 1066,
+     "h": 1600
+    }
+   ],
+   "post": "https://www.facebook.com/share/p/1DZEXSKDWs/"
   },
   {
    "id": "event-grand-opening",
@@ -127,8 +213,8 @@
     {
      "src": "gallery/event-grand-opening/05.jpg",
      "thumb": "gallery/event-grand-opening/05-t.jpg",
-     "w": 1400,
-     "h": 933
+     "w": 1440,
+     "h": 960
     }
    ]
   }
