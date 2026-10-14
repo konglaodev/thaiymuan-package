@@ -163,6 +163,19 @@ if (fbWrap){
   }, {passive:true});
 }
 
+// ວັດຄວາມສູງແຖບລຸ່ມມືຖື → ກັນບໍ່ໃຫ້ມັນບັງເນື້ອຫາ
+const mbar = document.querySelector('.mbar');
+if (mbar){
+  const setMbar = () => {
+    const h = mbar.offsetHeight;
+    document.documentElement.style.setProperty('--mbar-h', (h ? h : 78) + 'px');
+  };
+  setMbar();
+  addEventListener('resize', setMbar, {passive:true});
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(setMbar);
+  if (window.ResizeObserver) new ResizeObserver(setMbar).observe(mbar);
+}
+
 // scroll reveal
 const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
 const io = new IntersectionObserver(es => {
