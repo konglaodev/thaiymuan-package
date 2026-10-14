@@ -1,0 +1,136 @@
+{
+ "albums": [
+  {
+   "id": "wedding-reception",
+   "title": "ງານດອງ — ຕ້ອນຮັບ ແລະ ງານລ້ຽງ",
+   "desc": "ຊ່ວງຕ້ອນຮັບແຂກ ແລະ ງານລ້ຽງຕອນແລງ",
+   "cover": "gallery/wedding-reception/01-t.jpg",
+   "photos": [
+    {
+     "src": "gallery/wedding-reception/01.jpg",
+     "thumb": "gallery/wedding-reception/01-t.jpg",
+     "w": 414,
+     "h": 414
+    },
+    {
+     "src": "gallery/wedding-reception/02.jpg",
+     "thumb": "gallery/wedding-reception/02-t.jpg",
+     "w": 414,
+     "h": 414
+    },
+    {
+     "src": "gallery/wedding-reception/03.jpg",
+     "thumb": "gallery/wedding-reception/03-t.jpg",
+     "w": 843,
+     "h": 1265
+    },
+    {
+     "src": "gallery/wedding-reception/04.jpg",
+     "thumb": "gallery/wedding-reception/04-t.jpg",
+     "w": 414,
+     "h": 414
+    },
+    {
+     "src": "gallery/wedding-reception/05.jpg",
+     "thumb": "gallery/wedding-reception/05-t.jpg",
+     "w": 414,
+     "h": 414
+    },
+    {
+     "src": "gallery/wedding-reception/06.jpg",
+     "thumb": "gallery/wedding-reception/06-t.jpg",
+     "w": 414,
+     "h": 414
+    },
+    {
+     "src": "gallery/wedding-reception/07.jpg",
+     "thumb": "gallery/wedding-reception/07-t.jpg",
+     "w": 414,
+     "h": 414
+    },
+    {
+     "src": "gallery/wedding-reception/08.jpg",
+     "thumb": "gallery/wedding-reception/08-t.jpg",
+     "w": 414,
+     "h": 414
+    },
+    {
+     "src": "gallery/wedding-reception/09.jpg",
+     "thumb": "gallery/wedding-reception/09-t.jpg",
+     "w": 315,
+     "h": 315
+    },
+    {
+     "src": "gallery/wedding-reception/10.jpg",
+     "thumb": "gallery/wedding-reception/10-t.jpg",
+     "w": 843,
+     "h": 1265
+    }
+   ]
+  },
+  {
+   "id": "wedding-lao",
+   "title": "ງານດອງຊຸດລາວ · 27.06.2026",
+   "desc": "ຊຸດລາວເຕັມຮູບແບບ ຖ່າຍໃນສະຕູດິໂອ ແລະ ໜ້າງານ",
+   "cover": "gallery/wedding-lao/01-t.jpg",
+   "photos": [
+    {
+     "src": "gallery/wedding-lao/01.jpg",
+     "thumb": "gallery/wedding-lao/01-t.jpg",
+     "w": 843,
+     "h": 1265
+    },
+    {
+     "src": "gallery/wedding-lao/02.jpg",
+     "thumb": "gallery/wedding-lao/02-t.jpg",
+     "w": 843,
+     "h": 1265
+    },
+    {
+     "src": "gallery/wedding-lao/03.jpg",
+     "thumb": "gallery/wedding-lao/03-t.jpg",
+     "w": 843,
+     "h": 1265
+    }
+   ]
+  },
+  {
+   "id": "event-grand-opening",
+   "title": "Grand Opening — Asean Auto",
+   "desc": "ງານເປີດຮ້ານ ແລະ ອີເວັ້ນ",
+   "cover": "gallery/event-grand-opening/01-t.jpg",
+   "photos": [
+    {
+     "src": "gallery/event-grand-opening/01.jpg",
+     "thumb": "gallery/event-grand-opening/01-t.jpg",
+     "w": 843,
+     "h": 1265
+    },
+    {
+     "src": "gallery/event-grand-opening/02.jpg",
+     "thumb": "gallery/event-grand-opening/02-t.jpg",
+     "w": 843,
+     "h": 1265
+    },
+    {
+     "src": "gallery/event-grand-opening/03.jpg",
+     "thumb": "gallery/event-grand-opening/03-t.jpg",
+     "w": 843,
+     "h": 1265
+    },
+    {
+     "src": "gallery/event-grand-opening/04.jpg",
+     "thumb": "gallery/event-grand-opening/04-t.jpg",
+     "w": 843,
+     "h": 1265
+    },
+    {
+     "src": "gallery/event-grand-opening/05.jpg",
+     "thumb": "gallery/event-grand-opening/05-t.jpg",
+     "w": 1400,
+     "h": 933
+    }
+   ]
+  }
+ ]
+}

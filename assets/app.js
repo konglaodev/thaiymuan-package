@@ -176,6 +176,94 @@ if (mbar){
   if (window.ResizeObserver) new ResizeObserver(setMbar).observe(mbar);
 }
 
+// ================= GALLERY (ອັລບັ້ມ + ເບິ່ງເຕັມຈໍ) =================
+const albumsEl = document.getElementById('albums');
+if (albumsEl){
+  const albumsView = document.getElementById('albumsView');
+  const albumView  = document.getElementById('albumView');
+  const shotsEl    = document.getElementById('shots');
+  const viewer = document.getElementById('viewer');
+  const vImg   = document.getElementById('vImg');
+  const vCount = document.getElementById('vCount');
+  let album = null, idx = 0;
+
+  fetch('gallery/albums.json')
+    .then(r => r.json())
+    .then(data => {
+      albumsEl.innerHTML = data.albums.map((a, i) => `
+        <button class="album" type="button" data-i="${i}">
+          <span class="n">${a.photos.length} ຮູບ</span>
+          <span class="ph"><img src="${a.cover}" alt="${a.title}" loading="lazy"></span>
+          <span class="cap"><h3>${a.title}</h3><p>${a.desc}</p></span>
+        </button>`).join('');
+      albumsEl.querySelectorAll('.album').forEach(btn =>
+        btn.addEventListener('click', () => openAlbum(data.albums[+btn.dataset.i])));
+    })
+    .catch(() => {
+      albumsEl.innerHTML = '<p style="color:var(--muted)">ໂຫຼດອັລບັ້ມບໍ່ສຳເລັດ — ລອງໂຫຼດໜ້າຄືນໃໝ່.</p>';
+    });
+
+  function openAlbum(a){
+    album = a;
+    document.getElementById('albumTitle').textContent = a.title;
+    document.getElementById('albumDesc').textContent  = a.desc;
+    shotsEl.innerHTML = a.photos.map((ph, i) => `
+      <button type="button" data-i="${i}">
+        <img src="${ph.thumb}" alt="${a.title} ${i + 1}" loading="lazy" width="${ph.w}" height="${ph.h}">
+      </button>`).join('');
+    shotsEl.querySelectorAll('button').forEach(b =>
+      b.addEventListener('click', () => openViewer(+b.dataset.i)));
+    albumsView.hidden = true;
+    albumView.hidden = false;
+    document.getElementById('albums-sec').scrollIntoView({behavior:'smooth', block:'start'});
+  }
+
+  document.getElementById('backBtn').addEventListener('click', () => {
+    albumView.hidden = true;
+    albumsView.hidden = false;
+    document.getElementById('albums-sec').scrollIntoView({behavior:'smooth', block:'start'});
+  });
+
+  function openViewer(i){
+    idx = i;
+    show();
+    viewer.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+  function show(){
+    const ph = album.photos[idx];
+    vImg.src = ph.src;
+    vImg.alt = album.title + ' ' + (idx + 1);
+    vCount.textContent = (idx + 1) + ' / ' + album.photos.length;
+  }
+  const step = d => { idx = (idx + d + album.photos.length) % album.photos.length; show(); };
+  function closeViewer(){
+    viewer.classList.remove('open');
+    document.body.style.overflow = '';
+    vImg.src = '';
+  }
+
+  document.getElementById('vNext').addEventListener('click', e => { e.stopPropagation(); step(1); });
+  document.getElementById('vPrev').addEventListener('click', e => { e.stopPropagation(); step(-1); });
+  document.getElementById('vClose').addEventListener('click', closeViewer);
+  viewer.addEventListener('click', e => { if (e.target === viewer) closeViewer(); });
+  addEventListener('keydown', e => {
+    if (!viewer.classList.contains('open')) return;
+    if (e.key === 'Escape') closeViewer();
+    if (e.key === 'ArrowRight') step(1);
+    if (e.key === 'ArrowLeft')  step(-1);
+  });
+  // ປັດຊ້າຍ-ຂວາຢູ່ມືຖື
+  let x0 = null;
+  viewer.addEventListener('touchstart', e => { x0 = e.touches[0].clientX; }, {passive:true});
+  viewer.addEventListener('touchend', e => {
+    if (x0 === null) return;
+    const dx = e.changedTouches[0].clientX - x0;
+    if (Math.abs(dx) > 50) step(dx < 0 ? 1 : -1);
+    x0 = null;
+  }, {passive:true});
+}
+
 // scroll reveal
 const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
 const io = new IntersectionObserver(es => {

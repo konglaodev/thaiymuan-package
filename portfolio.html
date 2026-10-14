@@ -45,13 +45,42 @@
 
 <main id="top">
 
+<!-- ============ ALBUMS ============ -->
+<section id="albums-sec" class="folio-page">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="eyebrow">Gallery</span>
+      <h2>ຜົນງານຂອງພວກເຮົາ</h2>
+      <p>ເລືອກອັລບັ້ມເພື່ອເບິ່ງຮູບທັງໝົດ — ກົດຮູບໃດກໍໄດ້ເພື່ອເບິ່ງເຕັມຈໍ.</p>
+    </div>
+
+    <div id="albumsView">
+      <div class="albums rv" id="albums"></div>
+    </div>
+
+    <div id="albumView" hidden>
+      <div class="album-head">
+        <button class="back" id="backBtn" type="button">
+          <svg viewBox="0 0 24 24"><path d="M15 19l-7-7 7-7"/></svg>
+          ອັລບັ້ມທັງໝົດ
+        </button>
+        <div>
+          <h3 id="albumTitle"></h3>
+          <p id="albumDesc"></p>
+        </div>
+      </div>
+      <div class="shots" id="shots"></div>
+    </div>
+  </div>
+</section>
+
 <!-- ============ PORTFOLIO ============ -->
-<section id="portfolio" class="folio-page">
+<section id="portfolio">
   <div class="wrap">
     <div class="sec-head rv">
       <span class="eyebrow">Portfolio</span>
-      <h2>ຜົນງານຂອງພວກເຮົາ</h2>
-      <p>ດຶງ post ຫຼ້າສຸດມາຈາກເພຈ Facebook ຂອງ Thaiymuan Production ໂດຍກົງ — ລົງງານໃໝ່ເທິງເພຈ ໜ້ານີ້ອັບເດດຕາມເອງ.</p>
+      <h2>post ຫຼ້າສຸດຈາກ Facebook</h2>
+      <p>ດຶງມາຈາກເພຈ Facebook ຂອງ Thaiymuan Production ໂດຍກົງ — ລົງງານໃໝ່ເທິງເພຈ ໜ້ານີ້ອັບເດດຕາມເອງ.</p>
     </div>
 
     <div class="folio rv">
@@ -103,6 +132,20 @@
     </nav>
   </div>
 </footer>
+
+<div class="viewer" id="viewer" role="dialog" aria-modal="true" aria-label="ເບິ່ງຮູບ">
+  <button class="vbtn vclose" id="vClose" type="button" aria-label="ປິດ">
+    <svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg>
+  </button>
+  <button class="vbtn vprev" id="vPrev" type="button" aria-label="ຮູບກ່ອນໜ້າ">
+    <svg viewBox="0 0 24 24"><path d="M15 19l-7-7 7-7"/></svg>
+  </button>
+  <img id="vImg" alt="">
+  <button class="vbtn vnext" id="vNext" type="button" aria-label="ຮູບຕໍ່ໄປ">
+    <svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg>
+  </button>
+  <div class="vcount" id="vCount"></div>
+</div>
 
 <!-- ============ MOBILE BAR ============ -->
 <div class="mbar">
