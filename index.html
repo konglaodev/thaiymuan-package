@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Thaiymuan Production — ແພ໊ກເກັດຖ່າຍຮູບງານດອງ</title>
-<meta name="description" content="Thaiymuan Production — ແພ໊ກເກັດຖ່າຍຮູບ ແລະ ຖ່າຍວິດີໂອງານດອງ. ລາຄາຄົບທຸກແພ໊ກເກັດ. ຕິດຕໍ່ 020 55959236">
+<title>Thaiymuan Production — ແພັກເກັດຖ່າຍຮູບງານດອງ</title>
+<meta name="description" content="Thaiymuan Production — ແພັກເກັດຖ່າຍຮູບ ແລະ ຖ່າຍວິດີໂອງານດອງ. ລາຄາຄົບທຸກແພັກເກັດ. ຕິດຕໍ່ 020 55959236">
 <meta name="theme-color" content="#0b0b0e">
-<meta property="og:title" content="Thaiymuan Production — ແພ໊ກເກັດຖ່າຍຮູບງານດອງ">
-<meta property="og:description" content="ແພ໊ກເກັດຖ່າຍຮູບ ແລະ ວິດີໂອງານດອງ ເລີ່ມຕົ້ນ 5,500฿ · ຕິດຕໍ່ 020 55959236">
+<meta property="og:title" content="Thaiymuan Production — ແພັກເກັດຖ່າຍຮູບງານດອງ">
+<meta property="og:description" content="ແພັກເກັດຖ່າຍຮູບງານດອງ ຫຼຸດແລ້ວເລີ່ມຕົ້ນ 6,500฿ · ແພັກເກັດວິດີໂອ ເລີ່ມຕົ້ນ 5,500฿ · ຕິດຕໍ່ 020 55959236">
 <meta property="og:type" content="website">
 <meta property="og:image" content="logo/og-image.jpg">
 <meta name="twitter:card" content="summary_large_image">
@@ -143,6 +143,7 @@ section{padding:clamp(3.4rem,9vw,6.5rem) 0;position:relative}
   letter-spacing:-.01em;margin-top:1rem;
 }
 .sec-head p{color:var(--muted);margin-top:.9rem;font-size:.98rem}
+.sec-head p.promo{color:var(--gold-2);font-weight:400;margin-top:.5rem}
 
 /* ---- toggle ---- */
 .toggle{
@@ -204,6 +205,19 @@ section{padding:clamp(3.4rem,9vw,6.5rem) 0;position:relative}
 }
 .price b{font-weight:200;font-size:clamp(2rem,6.4vw,2.6rem);line-height:1;letter-spacing:-.03em;font-variant-numeric:tabular-nums}
 .price i{font-style:normal;font-size:1.05rem;color:var(--gold);padding-bottom:.2rem}
+.price s{
+  font-size:1.05rem;color:var(--muted);font-variant-numeric:tabular-nums;
+  text-decoration:line-through;text-decoration-color:rgba(217,168,79,.75);
+  text-decoration-thickness:1.5px;padding-bottom:.25rem;margin-right:.25rem;
+}
+.save{
+  display:inline-flex;align-items:center;gap:.4rem;align-self:flex-start;
+  margin:-.6rem 0 1.2rem;position:relative;z-index:1;
+  font-size:.74rem;font-weight:500;letter-spacing:.04em;
+  padding:.3rem .7rem;border-radius:999px;
+  background:var(--gold-dim);color:var(--gold-2);border:1px solid rgba(217,168,79,.32);
+}
+.save::before{content:"";width:5px;height:5px;border-radius:50%;background:var(--gold)}
 .feats{list-style:none;border-top:1px solid var(--line);padding-top:1.2rem;position:relative;z-index:1;flex:1}
 .feats li{display:flex;gap:.7rem;align-items:flex-start;font-size:.92rem;color:var(--muted);margin-bottom:.6rem}
 .feats li:last-child{margin-bottom:0}
@@ -331,12 +345,12 @@ footer{border-top:1px solid var(--line);padding:2.4rem 0 calc(2.4rem + env(safe-
       <img src="logo/wordmark.png" alt="Thaiymuan Production ຖ່າຍມ່ວນ" width="1000" height="333">
     </a>
     <nav class="nav-links">
-      <a href="#packages">ແພ໊ກເກັດ</a>
-      <a href="#addons">ແພ໊ກເກັດເສີມ</a>
+      <a href="#packages">ແພັກເກັດ</a>
+      <a href="#addons">ແພັກເກັດເສີມ</a>
       <a href="#included">ສິ່ງທີ່ໄດ້ຮັບ</a>
       <a href="#contact">ຕິດຕໍ່</a>
     </nav>
-    <a class="btn btn-gold" href="#contact">ຈອງວັນງານ</a>
+    <a class="btn btn-gold" href="#contact">ຈອງມື້ງານ</a>
   </div>
 </header>
 
@@ -346,19 +360,19 @@ footer{border-top:1px solid var(--line);padding:2.4rem 0 calc(2.4rem + env(safe-
   <div class="wrap">
     <img class="hero-logo rv" src="logo/wordmark.png" alt="Thaiymuan Production ຖ່າຍມ່ວນ" width="1000" height="333">
     <span class="eyebrow">Wedding Photography &amp; Film</span>
-    <h1>ເກັບທຸກຊ່ວງເວລາ<br>ຂອງ<strong>ງານດອງ</strong>ທ່ານ</h1>
-    <p class="lede">ແພ໊ກເກັດຖ່າຍຮູບ ແລະ ຖ່າຍວິດີໂອ ຄົບທຸກຊ່ວງເວລາ — ແຕ່ງໃຫ້ງາມທຸກຮູບ ແລະ ສົ່ງໃຫ້ທັງໝົດຜ່ານ link download.</p>
+    <h1>ເກັບທຸກຊ່ວງເວລາ<br>ໃນ<strong>ງານດອງ</strong>ຂອງທ່ານ</h1>
+    <p class="lede">ແພັກເກັດຖ່າຍຮູບ ແລະ ຖ່າຍວິດີໂອ ຄົບທຸກຊ່ວງເວລາ — ແຕ່ງໃຫ້ງາມທຸກຮູບ ແລະ ສົ່ງໃຫ້ທັງໝົດຜ່ານ link download.</p>
     <div class="hero-cta">
-      <a class="btn btn-gold" href="#packages">ເບິ່ງແພ໊ກເກັດ ແລະ ລາຄາ</a>
+      <a class="btn btn-gold" href="#packages">ເບິ່ງແພັກເກັດ ແລະ ລາຄາ</a>
       <a class="btn btn-wa" href="https://wa.me/8562055959236?text=%E0%BA%AA%E0%BA%B0%E0%BA%9A%E0%BA%B2%E0%BA%8D%E0%BA%94%E0%BA%B5%20%E0%BA%AA%E0%BA%AD%E0%BA%9A%E0%BA%96%E0%BA%B2%E0%BA%A1%E0%BA%82%E0%BB%89%E0%BA%AD%E0%BA%A1%E0%BA%B9%E0%BA%99%E0%BB%81%E0%BA%9E%E0%BB%8A%E0%BA%81%E0%BB%80%E0%BA%81%E0%BA%B1%E0%BA%94" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.96L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22c5.46 0 9.92-4.45 9.92-9.91C21.96 6.45 17.5 2 12.04 2Zm4.52 11.86c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.17.25-.66.81-.81.97-.15.17-.3.19-.54.06-.25-.12-1.06-.39-2.02-1.25-.75-.66-1.25-1.48-1.4-1.73-.15-.25-.02-.38.11-.5.11-.11.25-.3.37-.44.12-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.12-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1s.9 2.43 1.03 2.6c.12.17 1.76 2.81 4.3 3.84.6.26 1.07.41 1.44.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.19.21-.58.21-1.08.15-1.19-.06-.1-.23-.17-.48-.29Z"/></svg>
         ສອບຖາມທາງ WhatsApp
       </a>
     </div>
     <div class="stats rv">
-      <div class="stat"><b>5,500฿</b><span>ເລີ່ມຕົ້ນ</span></div>
+      <div class="stat"><b>6,500฿</b><span>ຖ່າຍຮູບ ເລີ່ມຕົ້ນ (ຫຼຸດແລ້ວ)</span></div>
       <div class="stat"><b>2–3</b><span>ຊ່າງຕໍ່ງານ</span></div>
-      <div class="stat"><b>120</b><span>ຮູບປີ້ນສູງສຸດ</span></div>
+      <div class="stat"><b>120</b><span>ຮູບປຣິ້ນສູງສຸດ</span></div>
       <div class="stat"><b>4K</b><span>Cinematic film</span></div>
     </div>
   </div>
@@ -369,11 +383,12 @@ footer{border-top:1px solid var(--line);padding:2.4rem 0 calc(2.4rem + env(safe-
   <div class="wrap">
     <div class="sec-head rv">
       <span class="eyebrow">Packages</span>
-      <h2>ແພ໊ກເກັດ ແລະ ລາຄາ</h2>
-      <p>ເລືອກຕາມຊ່ວງເວລາຂອງງານ. ສາມາດປະສົມແພ໊ກເກັດຮູບ ແລະ ວິດີໂອ ເຂົ້າກັນໄດ້.</p>
+      <h2>ແພັກເກັດ ແລະ ລາຄາ</h2>
+      <p>ເລືອກຕາມຊ່ວງເວລາຂອງງານ. ສາມາດປະສົມແພັກເກັດຮູບ ແລະ ວິດີໂອ ເຂົ້າກັນໄດ້.</p>
+      <p class="promo">ໂປຣໂມຊັນແພັກເກັດຖ່າຍຮູບ — ແພັກເກັດ 1 ແລະ 2 ຫຼຸດ 1,000฿ · ແພັກເກັດ 3 ແລະ 4 ຫຼຸດ 2,000฿</p>
     </div>
 
-    <div class="toggle rv" role="tablist" aria-label="ປະເພດແພ໊ກເກັດ">
+    <div class="toggle rv" role="tablist" aria-label="ປະເພດແພັກເກັດ">
       <button role="tab" id="tab-photo" aria-controls="pane-photo" aria-selected="true">
         <svg viewBox="0 0 24 24"><path d="M12 15.2a3.2 3.2 0 1 0 0-6.4 3.2 3.2 0 0 0 0 6.4Zm8-8.2h-3.1l-1.2-2H8.3l-1.2 2H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2Zm-8 11.3A5.3 5.3 0 1 1 12 7.7a5.3 5.3 0 0 1 0 10.6Z"/></svg>
         ຖ່າຍຮູບ
@@ -392,15 +407,16 @@ footer{border-top:1px solid var(--line);padding:2.4rem 0 calc(2.4rem + env(safe-
           <h3>ງານເຊົ້າ</h3>
           <div class="hours"><span>08:00 – 12:00</span></div>
         </div>
-        <div class="price"><b>7,500</b><i>฿</i></div>
+        <div class="price"><s>7,500฿</s><b>6,500</b><i>฿</i></div>
+        <div class="save">ຫຼຸດ 1,000 ฿</div>
         <ul class="feats">
           <li><svg viewBox="0 0 24 24"><path d="M4 12.5 9 17.5 20 6.5"/></svg>ຊ່າງພາບ 2 ຄົນ</li>
           <li><svg viewBox="0 0 24 24"><path d="M4 12.5 9 17.5 20 6.5"/></svg>ເພີ່ມດອກໄຟພາຍໃນງານ</li>
-          <li class="hl"><svg viewBox="0 0 24 24"><path d="M4 12.5 9 17.5 20 6.5"/></svg>ແຖມຮູບປີ້ນ 40 ໃບ — ສາມາດເພີ່ມໄດ້</li>
+          <li class="hl"><svg viewBox="0 0 24 24"><path d="M4 12.5 9 17.5 20 6.5"/></svg>ແຖມຮູບປຣິ້ນ 40 ໃບ — ສາມາດເພີ່ມໄດ້</li>
           <li><svg viewBox="0 0 24 24"><path d="M4 12.5 9 17.5 20 6.5"/></svg>ແຕ່ງໃຫ້ງາມທຸກຮູບ</li>
           <li><svg viewBox="0 0 24 24"><path d="M4 12.5 9 17.5 20 6.5"/></svg>ສົ່ງຮູບໃຫ້ທັງໝົດ ຜ່ານ link download</li>
         </ul>
-        <a class="btn" href="#contact">ຈອງແພ໊ກເກັດນີ້</a>
+        <a class="btn" href="#contact">ຈອງແພັກເກັດນີ້</a>
       </article>
 
       <article class="card">
@@ -409,15 +425,16 @@ footer{border-top:1px solid var(--line);padding:2.4rem 0 calc(2.4rem + env(safe-
           <h3>ງານເຊົ້າສວຍ</h3>
           <div class="hours"><span>08:00 – 15:00</span></div>
         </div>
-        <div class="price"><b>9,500</b><i>฿</i></div>
+        <div class="price"><s>9,500฿</s><b>8,500</b><i>฿</i></div>
+        <div class="save">ຫຼຸດ 1,000 ฿</div>
         <ul class="feats">
           <li><svg viewBox="0 0 24 24"><path d="M4 12.5 9 17.5 20 6.5"/></svg>ຊ່າງພາບ 2 ຄົນ</li>
           <li><svg viewBox="0 0 24 24"><path d="M4 12.5 9 17.5 20 6.5"/></svg>ເພີ່ມດອກໄຟພາຍໃນງານ</li>
-          <li class="hl"><svg viewBox="0 0 24 24"><path d="M4 12.5 9 17.5 20 6.5"/></svg>ແຖມຮູບປີ້ນ 80 ໃບ — ສາມາດເພີ່ມໄດ້</li>
+          <li class="hl"><svg viewBox="0 0 24 24"><path d="M4 12.5 9 17.5 20 6.5"/></svg>ແຖມຮູບປຣິ້ນ 80 ໃບ — ສາມາດເພີ່ມໄດ້</li>
           <li><svg viewBox="0 0 24 24"><path d="M4 12.5 9 17.5 20 6.5"/></svg>ແຕ່ງໃຫ້ງາມທຸກຮູບ</li>
           <li><svg viewBox="0 0 24 24"><path d="M4 12.5 9 17.5 20 6.5"/></svg>ສົ່ງຮູບໃຫ້ທັງໝົດ ຜ່ານ link download</li>
         </ul>
-        <a class="btn" href="#contact">ຈອງແພ໊ກເກັດນີ້</a>
+        <a class="btn" href="#contact">ຈອງແພັກເກັດນີ້</a>
       </article>
 
       <article class="card featured">
@@ -427,16 +444,17 @@ footer{border-top:1px solid var(--line);padding:2.4rem 0 calc(2.4rem + env(safe-
           <h3>ງານສວຍຫາແລງ</h3>
           <div class="hours"><span>15:00 – 23:00</span></div>
         </div>
-        <div class="price"><b>12,000</b><i>฿</i></div>
+        <div class="price"><s>12,000฿</s><b>10,000</b><i>฿</i></div>
+        <div class="save">ຫຼຸດ 2,000 ฿</div>
         <ul class="feats">
           <li><svg viewBox="0 0 24 24"><path d="M4 12.5 9 17.5 20 6.5"/></svg>ຊ່າງພາບ 3 ຄົນ</li>
           <li><svg viewBox="0 0 24 24"><path d="M4 12.5 9 17.5 20 6.5"/></svg>ເພີ່ມດອກໄຟພາຍໃນງານ</li>
-          <li class="hl"><svg viewBox="0 0 24 24"><path d="M4 12.5 9 17.5 20 6.5"/></svg>ແຖມຮູບປີ້ນ 120 ໃບ — ສາມາດເພີ່ມໄດ້</li>
+          <li class="hl"><svg viewBox="0 0 24 24"><path d="M4 12.5 9 17.5 20 6.5"/></svg>ແຖມຮູບປຣິ້ນ 120 ໃບ — ສາມາດເພີ່ມໄດ້</li>
           <li><svg viewBox="0 0 24 24"><path d="M4 12.5 9 17.5 20 6.5"/></svg>ແຕ່ງໃຫ້ງາມທຸກຮູບ</li>
           <li><svg viewBox="0 0 24 24"><path d="M4 12.5 9 17.5 20 6.5"/></svg>ສົ່ງຮູບໃຫ້ທັງໝົດ ຜ່ານ link download</li>
-          <li class="hl"><svg viewBox="0 0 24 24"><path d="M4 12.5 9 17.5 20 6.5"/></svg>ແຖມຟີລະບົບສະແກນໂຫລດຮູບໜ້າງານ</li>
+          <li class="hl"><svg viewBox="0 0 24 24"><path d="M4 12.5 9 17.5 20 6.5"/></svg>ແຖມຟຣີລະບົບສະແກນໂຫຼດຮູບໜ້າງານ</li>
         </ul>
-        <a class="btn btn-gold" href="#contact">ຈອງແພ໊ກເກັດນີ້</a>
+        <a class="btn btn-gold" href="#contact">ຈອງແພັກເກັດນີ້</a>
       </article>
 
       <article class="card">
@@ -445,16 +463,17 @@ footer{border-top:1px solid var(--line);padding:2.4rem 0 calc(2.4rem + env(safe-
           <h3>ງານເຊົ້າ ແລະ ຕອນແລງ</h3>
           <div class="hours"><span>08:00 – 12:00</span><span>17:00 – 23:00</span></div>
         </div>
-        <div class="price"><b>15,000</b><i>฿</i></div>
+        <div class="price"><s>15,000฿</s><b>13,000</b><i>฿</i></div>
+        <div class="save">ຫຼຸດ 2,000 ฿</div>
         <ul class="feats">
           <li><svg viewBox="0 0 24 24"><path d="M4 12.5 9 17.5 20 6.5"/></svg>ຊ່າງພາບ 3 ຄົນ</li>
           <li><svg viewBox="0 0 24 24"><path d="M4 12.5 9 17.5 20 6.5"/></svg>ເພີ່ມດອກໄຟພາຍໃນງານ</li>
-          <li class="hl"><svg viewBox="0 0 24 24"><path d="M4 12.5 9 17.5 20 6.5"/></svg>ແຖມຮູບປີ້ນ 120 ໃບ — ສາມາດເພີ່ມໄດ້</li>
+          <li class="hl"><svg viewBox="0 0 24 24"><path d="M4 12.5 9 17.5 20 6.5"/></svg>ແຖມຮູບປຣິ້ນ 120 ໃບ — ສາມາດເພີ່ມໄດ້</li>
           <li><svg viewBox="0 0 24 24"><path d="M4 12.5 9 17.5 20 6.5"/></svg>ແຕ່ງໃຫ້ງາມທຸກຮູບ</li>
           <li><svg viewBox="0 0 24 24"><path d="M4 12.5 9 17.5 20 6.5"/></svg>ສົ່ງຮູບໃຫ້ທັງໝົດ ຜ່ານ link download</li>
-          <li class="hl"><svg viewBox="0 0 24 24"><path d="M4 12.5 9 17.5 20 6.5"/></svg>ແຖມຟີລະບົບສະແກນໂຫລດຮູບໜ້າງານ</li>
+          <li class="hl"><svg viewBox="0 0 24 24"><path d="M4 12.5 9 17.5 20 6.5"/></svg>ແຖມຟຣີລະບົບສະແກນໂຫຼດຮູບໜ້າງານ</li>
         </ul>
-        <a class="btn" href="#contact">ຈອງແພ໊ກເກັດນີ້</a>
+        <a class="btn" href="#contact">ຈອງແພັກເກັດນີ້</a>
       </article>
     </div>
 
@@ -470,11 +489,11 @@ footer{border-top:1px solid var(--line);padding:2.4rem 0 calc(2.4rem + env(safe-
         <ul class="feats">
           <li><svg viewBox="0 0 24 24"><path d="M4 12.5 9 17.5 20 6.5"/></svg>ຊ່າງວິດີໂອ 1 ຄົນ</li>
           <li class="hl"><svg viewBox="0 0 24 24"><path d="M4 12.5 9 17.5 20 6.5"/></svg>ວິດີໂອ highlights cinematic</li>
-          <li><svg viewBox="0 0 24 24"><path d="M4 12.5 9 17.5 20 6.5"/></svg>ສາມາດເລືອກໄດ້ຕາມໃຈ</li>
+          <li><svg viewBox="0 0 24 24"><path d="M4 12.5 9 17.5 20 6.5"/></svg>ສາມາດເລືອກເພງໄດ້ຕາມໃຈ</li>
           <li><svg viewBox="0 0 24 24"><path d="M4 12.5 9 17.5 20 6.5"/></svg>ແກ້ໃຫ້ໄດ້ 1 ຄັ້ງ</li>
           <li><svg viewBox="0 0 24 24"><path d="M4 12.5 9 17.5 20 6.5"/></svg>ສົ່ງວິດີໂອຜ່ານ link download</li>
         </ul>
-        <a class="btn" href="#contact">ຈອງແພ໊ກເກັດນີ້</a>
+        <a class="btn" href="#contact">ຈອງແພັກເກັດນີ້</a>
       </article>
 
       <article class="card">
@@ -487,11 +506,11 @@ footer{border-top:1px solid var(--line);padding:2.4rem 0 calc(2.4rem + env(safe-
         <ul class="feats">
           <li><svg viewBox="0 0 24 24"><path d="M4 12.5 9 17.5 20 6.5"/></svg>ຊ່າງວິດີໂອ 1 ຄົນ</li>
           <li class="hl"><svg viewBox="0 0 24 24"><path d="M4 12.5 9 17.5 20 6.5"/></svg>ວິດີໂອ highlights cinematic</li>
-          <li><svg viewBox="0 0 24 24"><path d="M4 12.5 9 17.5 20 6.5"/></svg>ສາມາດເລືອກໄດ້ຕາມໃຈ</li>
+          <li><svg viewBox="0 0 24 24"><path d="M4 12.5 9 17.5 20 6.5"/></svg>ສາມາດເລືອກເພງໄດ້ຕາມໃຈ</li>
           <li><svg viewBox="0 0 24 24"><path d="M4 12.5 9 17.5 20 6.5"/></svg>ແກ້ໃຫ້ໄດ້ 1 ຄັ້ງ</li>
           <li><svg viewBox="0 0 24 24"><path d="M4 12.5 9 17.5 20 6.5"/></svg>ສົ່ງວິດີໂອຜ່ານ link download</li>
         </ul>
-        <a class="btn" href="#contact">ຈອງແພ໊ກເກັດນີ້</a>
+        <a class="btn" href="#contact">ຈອງແພັກເກັດນີ້</a>
       </article>
 
       <article class="card">
@@ -504,11 +523,11 @@ footer{border-top:1px solid var(--line);padding:2.4rem 0 calc(2.4rem + env(safe-
         <ul class="feats">
           <li><svg viewBox="0 0 24 24"><path d="M4 12.5 9 17.5 20 6.5"/></svg>ຊ່າງວິດີໂອ 2 ຄົນ</li>
           <li class="hl"><svg viewBox="0 0 24 24"><path d="M4 12.5 9 17.5 20 6.5"/></svg>ວິດີໂອ highlights cinematic</li>
-          <li><svg viewBox="0 0 24 24"><path d="M4 12.5 9 17.5 20 6.5"/></svg>ສາມາດເລືອກໄດ້ຕາມໃຈ</li>
+          <li><svg viewBox="0 0 24 24"><path d="M4 12.5 9 17.5 20 6.5"/></svg>ສາມາດເລືອກເພງໄດ້ຕາມໃຈ</li>
           <li><svg viewBox="0 0 24 24"><path d="M4 12.5 9 17.5 20 6.5"/></svg>ແກ້ໃຫ້ໄດ້ 2 ຄັ້ງ</li>
           <li><svg viewBox="0 0 24 24"><path d="M4 12.5 9 17.5 20 6.5"/></svg>ສົ່ງວິດີໂອຜ່ານ link download</li>
         </ul>
-        <a class="btn" href="#contact">ຈອງແພ໊ກເກັດນີ້</a>
+        <a class="btn" href="#contact">ຈອງແພັກເກັດນີ້</a>
       </article>
 
       <article class="card featured">
@@ -523,11 +542,11 @@ footer{border-top:1px solid var(--line);padding:2.4rem 0 calc(2.4rem + env(safe-
           <li><svg viewBox="0 0 24 24"><path d="M4 12.5 9 17.5 20 6.5"/></svg>ຊ່າງວິດີໂອ 3 ຄົນ</li>
           <li class="hl"><svg viewBox="0 0 24 24"><path d="M4 12.5 9 17.5 20 6.5"/></svg>ວິດີໂອ highlights cinematic 4 ນາທີ</li>
           <li class="hl"><svg viewBox="0 0 24 24"><path d="M4 12.5 9 17.5 20 6.5"/></svg>ວິດີໂອ record ຍາວ 1 ຊົ່ວໂມງ</li>
-          <li><svg viewBox="0 0 24 24"><path d="M4 12.5 9 17.5 20 6.5"/></svg>ສາມາດເລືອກໄດ້ຕາມໃຈ</li>
+          <li><svg viewBox="0 0 24 24"><path d="M4 12.5 9 17.5 20 6.5"/></svg>ສາມາດເລືອກເພງໄດ້ຕາມໃຈ</li>
           <li><svg viewBox="0 0 24 24"><path d="M4 12.5 9 17.5 20 6.5"/></svg>ແກ້ໃຫ້ໄດ້ 2 ຄັ້ງ</li>
           <li><svg viewBox="0 0 24 24"><path d="M4 12.5 9 17.5 20 6.5"/></svg>ສົ່ງວິດີໂອຜ່ານ link download</li>
         </ul>
-        <a class="btn btn-gold" href="#contact">ຈອງແພ໊ກເກັດນີ້</a>
+        <a class="btn btn-gold" href="#contact">ຈອງແພັກເກັດນີ້</a>
       </article>
     </div>
   </div>
@@ -538,8 +557,8 @@ footer{border-top:1px solid var(--line);padding:2.4rem 0 calc(2.4rem + env(safe-
   <div class="wrap">
     <div class="sec-head rv">
       <span class="eyebrow">Add-ons</span>
-      <h2>ແພ໊ກເກັດເສີມ</h2>
-      <p>ເພີ່ມເຂົ້າກັບແພ໊ກເກັດຫຼັກໄດ້ຕາມຕ້ອງການ.</p>
+      <h2>ແພັກເກັດເສີມ</h2>
+      <p>ເພີ່ມເຂົ້າກັບແພັກເກັດຫຼັກໄດ້ຕາມຕ້ອງການ.</p>
     </div>
 
     <h3 class="kicker rv" style="margin-bottom:1rem">ເສີມຖ່າຍຮູບ</h3>
@@ -549,7 +568,7 @@ footer{border-top:1px solid var(--line);padding:2.4rem 0 calc(2.4rem + env(safe-
         <div class="p"><em>2,500 <i>฿</i></em></div>
       </div>
       <div class="addon">
-        <div class="t">ຊ່າງພາບອັບເຕີປາຕີ້ · 1 ຄົນ<span>23:00 – 00:00</span></div>
+        <div class="t">ຊ່າງພາບອາຟເຕີປາຕີ້ · 1 ຄົນ<span>23:00 – 00:00</span></div>
         <div class="p"><em>1,000 <i>฿</i></em></div>
       </div>
     </div>
@@ -557,14 +576,14 @@ footer{border-top:1px solid var(--line);padding:2.4rem 0 calc(2.4rem + env(safe-
     <h3 class="kicker rv" style="margin:2.4rem 0 1rem">ເສີມວິດີໂອ</h3>
     <div class="addons rv">
       <div class="addon">
-        <div class="t">ຊ່າງວິດີໂອ 1 ຄົນ ບັນທືກວິດີໂອຍາວ<span>ເຄິ່ງມື້ / ເຕັມມື້</span></div>
+        <div class="t">ຊ່າງວິດີໂອ 1 ຄົນ ບັນທຶກວິດີໂອຍາວ<span>ເຄິ່ງມື້ / ເຕັມມື້</span></div>
         <div class="p">
           <em>3,500 <i>฿</i></em><small>ເຄິ່ງມື້</small>
           <em style="margin-top:.5rem">5,500 <i>฿</i></em><small>ເຕັມມື້</small>
         </div>
       </div>
       <div class="addon">
-        <div class="t">ເພີ່ມວິດີໂອ ອັບເຕີປາຕີ້<span>After party</span></div>
+        <div class="t">ເພີ່ມວິດີໂອ ອາຟເຕີປາຕີ້<span>After party</span></div>
         <div class="p"><em>3,000 <i>฿</i></em></div>
       </div>
     </div>
@@ -576,18 +595,18 @@ footer{border-top:1px solid var(--line);padding:2.4rem 0 calc(2.4rem + env(safe-
   <div class="wrap">
     <div class="sec-head rv">
       <span class="eyebrow">What you get</span>
-      <h2>ສິ່ງທີ່ໄດ້ຮັບທຸກແພ໊ກເກັດ</h2>
+      <h2>ສິ່ງທີ່ໄດ້ຮັບໃນທຸກແພັກເກັດ</h2>
     </div>
     <div class="incl rv">
       <div class="i">
         <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3v12m0 0-4-4m4 4 4-4M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg></div>
         <h4>ສົ່ງຜ່ານ link download</h4>
-        <p>ໄດ້ຮູບ ແລະ ວິດີໂອທັງໝົດ ບັນທືກເກັບໄວ້ເອງໄດ້ທັນທີ.</p>
+        <p>ໄດ້ຮູບ ແລະ ວິດີໂອທັງໝົດ ບັນທຶກເກັບໄວ້ເອງໄດ້ທັນທີ.</p>
       </div>
       <div class="i">
         <div class="ic"><svg viewBox="0 0 24 24"><path d="m12 3 2.4 5.3 5.6.6-4.2 3.9 1.2 5.7L12 15.8 6.9 18.5l1.2-5.7L4 8.9l5.6-.6L12 3Z"/></svg></div>
         <h4>ແຕ່ງໃຫ້ງາມທຸກຮູບ</h4>
-        <p>ບໍ່ແມ່ນແຕ່ບາງຮູບ — ທຸກຮູບທີ່ສົ່ງໃຫ້ຜ່ານການແຕ່ງສີແລ້ວ.</p>
+        <p>ບໍ່ແມ່ນພຽງບາງຮູບ — ທຸກຮູບທີ່ສົ່ງໃຫ້ຜ່ານການແຕ່ງສີແລ້ວ.</p>
       </div>
       <div class="i">
         <div class="ic"><svg viewBox="0 0 24 24"><path d="M9 18V6l10 6-10 6ZM5 5v14"/></svg></div>
@@ -596,8 +615,8 @@ footer{border-top:1px solid var(--line);padding:2.4rem 0 calc(2.4rem + env(safe-
       </div>
       <div class="i">
         <div class="ic"><svg viewBox="0 0 24 24"><path d="M4 7V5a1 1 0 0 1 1-1h2M4 17v2a1 1 0 0 0 1 1h2m13-13V5a1 1 0 0 0-1-1h-2m3 13v2a1 1 0 0 1-1 1h-2M3 12h18"/></svg></div>
-        <h4>ສະແກນໂຫລດຮູບໜ້າງານ</h4>
-        <p>ແຂກສະແກນ QR ແລ້ວໂຫລດຮູບໄດ້ເລີຍ (ແພ໊ກເກັດ 3 ແລະ 4).</p>
+        <h4>ສະແກນໂຫຼດຮູບໜ້າງານ</h4>
+        <p>ແຂກສະແກນ QR ແລ້ວໂຫຼດຮູບໄດ້ເລີຍ (ແພັກເກັດ 3 ແລະ 4).</p>
       </div>
     </div>
   </div>
@@ -609,8 +628,8 @@ footer{border-top:1px solid var(--line);padding:2.4rem 0 calc(2.4rem + env(safe-
     <div class="contact rv">
       <img class="contact-logo" src="logo/wordmark.png" alt="Thaiymuan Production" width="1000" height="333">
       <span class="eyebrow" style="justify-content:center">Booking</span>
-      <h2>ຈອງວັນງານຂອງທ່ານ</h2>
-      <p>ວັນງານໃນລະດູດອງເຕັມໄວ — ແນະນຳໃຫ້ຈອງລ່ວງໜ້າ. ສອບຖາມລາຍລະອຽດໄດ້ທຸກຊ່ອງທາງ.</p>
+      <h2>ຈອງມື້ງານຂອງທ່ານ</h2>
+      <p>ມື້ງານໃນລະດູດອງເຕັມໄວ — ແນະນຳໃຫ້ຈອງລ່ວງໜ້າ. ສອບຖາມລາຍລະອຽດໄດ້ທຸກຊ່ອງທາງ.</p>
       <a class="tel" href="tel:+8562055959236">020 55959236</a>
       <div class="row">
         <a class="btn btn-wa" href="https://wa.me/8562055959236?text=%E0%BA%AA%E0%BA%B0%E0%BA%9A%E0%BA%B2%E0%BA%8D%E0%BA%94%E0%BA%B5%20%E0%BA%AA%E0%BA%AD%E0%BA%9A%E0%BA%96%E0%BA%B2%E0%BA%A1%E0%BA%82%E0%BB%89%E0%BA%AD%E0%BA%A1%E0%BA%B9%E0%BA%99%E0%BB%81%E0%BA%9E%E0%BB%8A%E0%BA%81%E0%BB%80%E0%BA%81%E0%BA%B1%E0%BA%94" target="_blank" rel="noopener">
@@ -635,10 +654,10 @@ footer{border-top:1px solid var(--line);padding:2.4rem 0 calc(2.4rem + env(safe-
   <div class="wrap foot">
     <div class="foot-brand">
       <img src="logo/wordmark.png" alt="Thaiymuan Production" width="1000" height="333">
-      <span>© <span id="yr">2026</span> · ແພ໊ກເກັດຖ່າຍຮູບງານດອງ</span>
+      <span>© <span id="yr">2026</span> · ແພັກເກັດຖ່າຍຮູບງານດອງ</span>
     </div>
     <nav>
-      <a href="#packages">ແພ໊ກເກັດ</a>
+      <a href="#packages">ແພັກເກັດ</a>
       <a href="#addons">ເສີມ</a>
       <a href="#contact">ຕິດຕໍ່</a>
     </nav>
@@ -707,6 +726,38 @@ document.querySelectorAll('a[href^="tel:"]').forEach(a => {
       navigator.clipboard.writeText(PHONE_DISPLAY).then(done).catch(fail);
     } else { fail(); }
   });
+});
+
+// ປຸ່ມແພັກເກັດ → WhatsApp ພ້ອມຂໍ້ມູນແພັກເກັດທີ່ເລືອກ
+const WA_NUMBER = '8562055959236';
+
+document.querySelectorAll('.pane .card').forEach(card => {
+  const btn = card.querySelector('a.btn');
+  if (!btn) return;
+
+  const type  = card.closest('.pane').id === 'pane-video' ? 'ຖ່າຍວິດີໂອ' : 'ຖ່າຍຮູບ';
+  const name  = card.querySelector('h3').textContent.trim();
+  const price = card.querySelector('.price b').textContent.trim();
+  const hours = [...card.querySelectorAll('.hours span')].map(h => h.textContent.trim()).join(' ແລະ ');
+  const was  = card.querySelector('.price s');
+  const save = card.querySelector('.save');
+
+  const msg = [
+    'ສະບາຍດີ Thaiymuan Production',
+    '',
+    'ຂ້ອຍສົນໃຈແພັກເກັດນີ້:',
+    'ປະເພດ: ' + type,
+    'ແພັກເກັດ: ' + name,
+    'ເວລາ: ' + hours,
+    'ລາຄາ: ' + price + ' ฿',
+    ...(was ? ['ລາຄາປົກກະຕິ: ' + was.textContent.trim() + ' (' + save.textContent.trim() + ')'] : []),
+    '',
+    'ຢາກສອບຖາມມື້ວ່າງ ແລະ ລາຍລະອຽດເພີ່ມເຕີມ'
+  ].join('\n');
+
+  btn.href = 'https://wa.me/' + WA_NUMBER + '?text=' + encodeURIComponent(msg);
+  btn.target = '_blank';
+  btn.rel = 'noopener';
 });
 
 // scroll reveal
