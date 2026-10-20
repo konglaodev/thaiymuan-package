@@ -17,26 +17,41 @@ function moveIndicator(){
   ind.style.height = on.offsetHeight + 'px';
   ind.style.transform = 'translate(' + on.offsetLeft + 'px,' + on.offsetTop + 'px)';
 }
+function selectTab(tab){
+  tabs.forEach(t => t.setAttribute('aria-selected', t === tab));
+  moveIndicator();
+}
 
+// ກົດປຸ່ມ = ເລື່ອນໄປຫາກຸ່ມນັ້ນ (ເນື້ອຫາບໍ່ຖືກເຊື່ອງ — scroll ຕໍ່ກັນໄດ້)
 tabs.forEach(tab => {
   tab.addEventListener('click', () => {
-    tabs.forEach(t => {
-      const on = t === tab;
-      t.setAttribute('aria-selected', on);
-      const pane = document.getElementById(t.getAttribute('aria-controls'));
-      pane.hidden = !on;
-      if (on) {                                   // ເຮັດໃຫ້ card ຂຶ້ນເປັນລຳດັບໃໝ່
-        pane.classList.remove('in');
-        void pane.offsetWidth;                    // restart transition
-        requestAnimationFrame(() => pane.classList.add('in'));
-      }
-    });
-    moveIndicator();
+    selectTab(tab);
+    const head = document.getElementById(tab.id.replace('tab-', 'head-'));
+    if (!head) return;
+    // ເລື່ອນເອງ ພ້ອມເວັ້ນໄລຍະໃຫ້ແຖບ nav ບໍ່ບັງຫົວຂໍ້
+    const nav = document.querySelector('.nav');
+    const gap = (nav ? nav.offsetHeight : 66) + 18;
+    const y = head.getBoundingClientRect().top + scrollY - gap;
+    scrollTo({top: y, behavior: 'smooth'});
   });
 });
 moveIndicator();
 addEventListener('resize', moveIndicator, {passive:true});
 if (document.fonts && document.fonts.ready) document.fonts.ready.then(moveIndicator);
+
+// scroll ຮອດກຸ່ມໃດ ປຸ່ມຍ້າຍຕາມເອງ
+const panes = ['photo','video'].map(k => document.getElementById('pane-' + k)).filter(Boolean);
+if (panes.length === 2){
+  const spy = new IntersectionObserver(es => {
+    es.forEach(e => {
+      if (!e.isIntersecting) return;
+      const key = e.target.id.replace('pane-', '');
+      const tab = document.getElementById('tab-' + key);
+      if (tab && tab.getAttribute('aria-selected') !== 'true') selectTab(tab);
+    });
+  }, {rootMargin:'-45% 0px -45% 0px'});
+  panes.forEach(p => spy.observe(p));
+}
 
 // ລຳດັບ delay ຂອງແຕ່ລະ card
 document.querySelectorAll('.cards').forEach(grid => {
