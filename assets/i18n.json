@@ -1,0 +1,542 @@
+{
+ "nav.packages": {
+  "lo": "ແພັກເກັດ",
+  "th": "แพ็กเกจ",
+  "en": "Packages"
+ },
+ "nav.addons": {
+  "lo": "ແພັກເກັດເສີມ",
+  "th": "แพ็กเกจเสริม",
+  "en": "Add-ons"
+ },
+ "nav.portfolio": {
+  "lo": "ຜົນງານ",
+  "th": "ผลงาน",
+  "en": "Portfolio"
+ },
+ "nav.included": {
+  "lo": "ສິ່ງທີ່ໄດ້ຮັບ",
+  "th": "สิ่งที่ได้รับ",
+  "en": "What's included"
+ },
+ "nav.contact": {
+  "lo": "ຕິດຕໍ່",
+  "th": "ติดต่อ",
+  "en": "Contact"
+ },
+ "nav.book": {
+  "lo": "ຈອງມື້ງານ",
+  "th": "จองวันงาน",
+  "en": "Book your date"
+ },
+ "foot.addons": {
+  "lo": "ເສີມ",
+  "th": "เสริม",
+  "en": "Add-ons"
+ },
+ "foot.tag": {
+  "lo": "· ແພັກເກັດຖ່າຍຮູບງານດອງ",
+  "th": "· แพ็กเกจถ่ายภาพงานแต่ง",
+  "en": "· Wedding photography packages"
+ },
+ "mbar.price": {
+  "lo": "ລາຄາ",
+  "th": "ราคา",
+  "en": "Prices"
+ },
+ "mbar.call": {
+  "lo": "ໂທ 020 55959236",
+  "th": "โทร 020 55959236",
+  "en": "Call 020 55959236"
+ },
+ "hero.title": {
+  "lo": "ເກັບທຸກຊ່ວງເວລາ<br>ໃນ<strong>ງານດອງ</strong>ຂອງທ່ານ",
+  "th": "เก็บทุกช่วงเวลา<br>ใน<strong>งานแต่ง</strong>ของคุณ",
+  "en": "Every moment of<br>your <strong>wedding day</strong>"
+ },
+ "hero.lede": {
+  "lo": "ແພັກເກັດຖ່າຍຮູບ ແລະ ຖ່າຍວິດີໂອ ຄົບທຸກຊ່ວງເວລາ — ແຕ່ງໃຫ້ງາມທຸກຮູບ ແລະ ສົ່ງໃຫ້ທັງໝົດຜ່ານ link download.",
+  "th": "แพ็กเกจถ่ายภาพและวิดีโอ ครบทุกช่วงเวลา — รีทัชทุกภาพ และส่งให้ทั้งหมดผ่านลิงก์ดาวน์โหลด",
+  "en": "Photography and film packages covering the whole day — every photo retouched, all of them delivered by download link."
+ },
+ "hero.cta1": {
+  "lo": "ເບິ່ງແພັກເກັດ ແລະ ລາຄາ",
+  "th": "ดูแพ็กเกจและราคา",
+  "en": "See packages & prices"
+ },
+ "hero.cta2": {
+  "lo": "ສອບຖາມທາງ WhatsApp",
+  "th": "สอบถามทาง WhatsApp",
+  "en": "Ask on WhatsApp"
+ },
+ "stat.from": {
+  "lo": "ຖ່າຍຮູບ ເລີ່ມຕົ້ນ (ຫຼຸດແລ້ວ)",
+  "th": "ถ่ายภาพ เริ่มต้น (ลดแล้ว)",
+  "en": "Photography from (after discount)"
+ },
+ "stat.crew": {
+  "lo": "ຊ່າງຕໍ່ງານ",
+  "th": "ช่างต่องาน",
+  "en": "Shooters per event"
+ },
+ "stat.prints": {
+  "lo": "ຮູບປຣິ້ນສູງສຸດ",
+  "th": "ภาพปริ้นท์สูงสุด",
+  "en": "Prints included (max)"
+ },
+ "sec.pkg.title": {
+  "lo": "ແພັກເກັດ ແລະ ລາຄາ",
+  "th": "แพ็กเกจและราคา",
+  "en": "Packages & prices"
+ },
+ "sec.pkg.desc": {
+  "lo": "ເລືອກຕາມຊ່ວງເວລາຂອງງານ. ສາມາດປະສົມແພັກເກັດຮູບ ແລະ ວິດີໂອ ເຂົ້າກັນໄດ້.",
+  "th": "เลือกตามช่วงเวลาของงาน ผสมแพ็กเกจภาพและวิดีโอเข้าด้วยกันได้",
+  "en": "Pick by the hours you need. Photo and film packages can be combined."
+ },
+ "promo": {
+  "lo": "ໂປຣໂມຊັນແພັກເກັດຖ່າຍຮູບ — ແພັກເກັດ 1 ແລະ 2 ຫຼຸດ 1,000฿ · ແພັກເກັດ 3 ແລະ 4 ຫຼຸດ 2,000฿",
+  "th": "โปรโมชันแพ็กเกจถ่ายภาพ — แพ็กเกจ 1 และ 2 ลด 1,000฿ · แพ็กเกจ 3 และ 4 ลด 2,000฿",
+  "en": "Photography promotion — packages 1 & 2 save 1,000฿ · packages 3 & 4 save 2,000฿"
+ },
+ "tab.photo": {
+  "lo": "ຖ່າຍຮູບ",
+  "th": "ถ่ายภาพ",
+  "en": "Photography"
+ },
+ "tab.video": {
+  "lo": "ຖ່າຍວິດີໂອ",
+  "th": "ถ่ายวิดีโอ",
+  "en": "Film"
+ },
+ "head.photo": {
+  "lo": "ແພັກເກັດຖ່າຍຮູບ",
+  "th": "แพ็กเกจถ่ายภาพ",
+  "en": "Photography packages"
+ },
+ "head.video": {
+  "lo": "ແພັກເກັດຖ່າຍວິດີໂອ",
+  "th": "แพ็กเกจถ่ายวิดีโอ",
+  "en": "Film packages"
+ },
+ "head.addon.photo": {
+  "lo": "ເສີມຖ່າຍຮູບ",
+  "th": "เสริมถ่ายภาพ",
+  "en": "Photography add-ons"
+ },
+ "head.addon.video": {
+  "lo": "ເສີມວິດີໂອ",
+  "th": "เสริมวิดีโอ",
+  "en": "Film add-ons"
+ },
+ "pkg.morning": {
+  "lo": "ງານເຊົ້າ",
+  "th": "งานเช้า",
+  "en": "Morning"
+ },
+ "pkg.morning2": {
+  "lo": "ງານເຊົ້າສວຍ",
+  "th": "งานเช้าถึงบ่าย",
+  "en": "Morning to afternoon"
+ },
+ "pkg.aft": {
+  "lo": "ງານສວຍຫາແລງ",
+  "th": "งานบ่ายถึงค่ำ",
+  "en": "Afternoon to night"
+ },
+ "pkg.aft2": {
+  "lo": "ງານສວຍແລງ",
+  "th": "งานบ่ายถึงค่ำ",
+  "en": "Afternoon to night"
+ },
+ "pkg.both": {
+  "lo": "ງານເຊົ້າ ແລະ ຕອນແລງ",
+  "th": "งานเช้าและค่ำ",
+  "en": "Morning and evening"
+ },
+ "badge.popular": {
+  "lo": "ນິຍົມ",
+  "th": "ยอดนิยม",
+  "en": "Popular"
+ },
+ "badge.complete": {
+  "lo": "ຄົບທີ່ສຸດ",
+  "th": "ครบที่สุด",
+  "en": "Most complete"
+ },
+ "save1000": {
+  "lo": "ຫຼຸດ 1,000 ฿",
+  "th": "ลด 1,000 ฿",
+  "en": "Save 1,000 ฿"
+ },
+ "save2000": {
+  "lo": "ຫຼຸດ 2,000 ฿",
+  "th": "ลด 2,000 ฿",
+  "en": "Save 2,000 ฿"
+ },
+ "f.ph2": {
+  "lo": "ຊ່າງພາບ 2 ຄົນ",
+  "th": "ช่างภาพ 2 คน",
+  "en": "2 photographers"
+ },
+ "f.ph3": {
+  "lo": "ຊ່າງພາບ 3 ຄົນ",
+  "th": "ช่างภาพ 3 คน",
+  "en": "3 photographers"
+ },
+ "f.lights": {
+  "lo": "ເພີ່ມດອກໄຟພາຍໃນງານ",
+  "th": "เพิ่มไฟในงาน",
+  "en": "Extra lighting at the venue"
+ },
+ "f.print40": {
+  "lo": "ແຖມຮູບປຣິ້ນ 40 ໃບ — ສາມາດເພີ່ມໄດ້",
+  "th": "แถมภาพปริ้นท์ 40 ใบ — เพิ่มได้",
+  "en": "40 printed photos included — more available"
+ },
+ "f.print80": {
+  "lo": "ແຖມຮູບປຣິ້ນ 80 ໃບ — ສາມາດເພີ່ມໄດ້",
+  "th": "แถมภาพปริ้นท์ 80 ใบ — เพิ่มได้",
+  "en": "80 printed photos included — more available"
+ },
+ "f.print120": {
+  "lo": "ແຖມຮູບປຣິ້ນ 120 ໃບ — ສາມາດເພີ່ມໄດ້",
+  "th": "แถมภาพปริ้นท์ 120 ใบ — เพิ่มได้",
+  "en": "120 printed photos included — more available"
+ },
+ "f.retouch": {
+  "lo": "ແຕ່ງໃຫ້ງາມທຸກຮູບ",
+  "th": "รีทัชทุกภาพ",
+  "en": "Every photo retouched"
+ },
+ "f.deliver.photo": {
+  "lo": "ສົ່ງຮູບໃຫ້ທັງໝົດ ຜ່ານ link download",
+  "th": "ส่งภาพทั้งหมดผ่านลิงก์ดาวน์โหลด",
+  "en": "All photos delivered by download link"
+ },
+ "f.qr": {
+  "lo": "ແຖມຟຣີລະບົບສະແກນໂຫຼດຮູບໜ້າງານ",
+  "th": "แถมฟรีระบบสแกนโหลดภาพหน้างาน",
+  "en": "Free on-site QR photo download"
+ },
+ "f.vid1": {
+  "lo": "ຊ່າງວິດີໂອ 1 ຄົນ",
+  "th": "ช่างวิดีโอ 1 คน",
+  "en": "1 videographer"
+ },
+ "f.vid2": {
+  "lo": "ຊ່າງວິດີໂອ 2 ຄົນ",
+  "th": "ช่างวิดีโอ 2 คน",
+  "en": "2 videographers"
+ },
+ "f.vid3": {
+  "lo": "ຊ່າງວິດີໂອ 3 ຄົນ",
+  "th": "ช่างวิดีโอ 3 คน",
+  "en": "3 videographers"
+ },
+ "f.highlights": {
+  "lo": "ວິດີໂອ highlights cinematic",
+  "th": "วิดีโอ highlights cinematic",
+  "en": "Cinematic highlights film"
+ },
+ "f.highlights4": {
+  "lo": "ວິດີໂອ highlights cinematic 4 ນາທີ",
+  "th": "วิดีโอ highlights cinematic 4 นาที",
+  "en": "4-minute cinematic highlights"
+ },
+ "f.record1h": {
+  "lo": "ວິດີໂອ record ຍາວ 1 ຊົ່ວໂມງ",
+  "th": "วิดีโอบันทึกยาว 1 ชั่วโมง",
+  "en": "1-hour full recording"
+ },
+ "f.song": {
+  "lo": "ສາມາດເລືອກເພງໄດ້ຕາມໃຈ",
+  "th": "เลือกเพลงได้ตามใจ",
+  "en": "Choose your own music"
+ },
+ "f.edit1": {
+  "lo": "ແກ້ໃຫ້ໄດ້ 1 ຄັ້ງ",
+  "th": "แก้ไขได้ 1 ครั้ง",
+  "en": "One round of revisions"
+ },
+ "f.edit2": {
+  "lo": "ແກ້ໃຫ້ໄດ້ 2 ຄັ້ງ",
+  "th": "แก้ไขได้ 2 ครั้ง",
+  "en": "Two rounds of revisions"
+ },
+ "f.deliver.video": {
+  "lo": "ສົ່ງວິດີໂອຜ່ານ link download",
+  "th": "ส่งวิดีโอผ่านลิงก์ดาวน์โหลด",
+  "en": "Film delivered by download link"
+ },
+ "btn.book": {
+  "lo": "ຈອງແພັກເກັດນີ້",
+  "th": "จองแพ็กเกจนี้",
+  "en": "Book this package"
+ },
+ "sec.addon.title": {
+  "lo": "ແພັກເກັດເສີມ",
+  "th": "แพ็กเกจเสริม",
+  "en": "Add-ons"
+ },
+ "sec.addon.desc": {
+  "lo": "ເພີ່ມເຂົ້າກັບແພັກເກັດຫຼັກໄດ້ຕາມຕ້ອງການ.",
+  "th": "เพิ่มเข้ากับแพ็กเกจหลักได้ตามต้องการ",
+  "en": "Add any of these to a main package."
+ },
+ "a.follow": {
+  "lo": "ຊ່າງພາບຕິດຕາມເຈົ້າພາບ ພາຍໃນງານ · 1 ຄົນ",
+  "th": "ช่างภาพติดตามเจ้าภาพในงาน · 1 คน",
+  "en": "Photographer following the hosts · 1 person"
+ },
+ "a.afterphoto": {
+  "lo": "ຊ່າງພາບອາຟເຕີປາຕີ້ · 1 ຄົນ",
+  "th": "ช่างภาพอาฟเตอร์ปาร์ตี้ · 1 คน",
+  "en": "After-party photographer · 1 person"
+ },
+ "a.longvideo": {
+  "lo": "ຊ່າງວິດີໂອ 1 ຄົນ ບັນທຶກວິດີໂອຍາວ",
+  "th": "ช่างวิดีโอ 1 คน บันทึกวิดีโอยาว",
+  "en": "1 videographer, full-length recording"
+ },
+ "a.halffull": {
+  "lo": "ເຄິ່ງມື້ / ເຕັມມື້",
+  "th": "ครึ่งวัน / เต็มวัน",
+  "en": "Half day / Full day"
+ },
+ "a.half": {
+  "lo": "ເຄິ່ງມື້",
+  "th": "ครึ่งวัน",
+  "en": "Half day"
+ },
+ "a.full": {
+  "lo": "ເຕັມມື້",
+  "th": "เต็มวัน",
+  "en": "Full day"
+ },
+ "a.aftervideo": {
+  "lo": "ເພີ່ມວິດີໂອ ອາຟເຕີປາຕີ້",
+  "th": "เพิ่มวิดีโออาฟเตอร์ปาร์ตี้",
+  "en": "After-party film"
+ },
+ "sec.incl.title": {
+  "lo": "ສິ່ງທີ່ໄດ້ຮັບໃນທຸກແພັກເກັດ",
+  "th": "สิ่งที่ได้รับในทุกแพ็กเกจ",
+  "en": "Included in every package"
+ },
+ "i1.t": {
+  "lo": "ສົ່ງຜ່ານ link download",
+  "th": "ส่งผ่านลิงก์ดาวน์โหลด",
+  "en": "Delivered by download link"
+ },
+ "i1.d": {
+  "lo": "ໄດ້ຮູບ ແລະ ວິດີໂອທັງໝົດ ບັນທຶກເກັບໄວ້ເອງໄດ້ທັນທີ.",
+  "th": "ได้ภาพและวิดีโอทั้งหมด บันทึกเก็บไว้เองได้ทันที",
+  "en": "Every photo and film, yours to download and keep."
+ },
+ "i2.t": {
+  "lo": "ແຕ່ງໃຫ້ງາມທຸກຮູບ",
+  "th": "รีทัชทุกภาพ",
+  "en": "Every photo retouched"
+ },
+ "i2.d": {
+  "lo": "ບໍ່ແມ່ນພຽງບາງຮູບ — ທຸກຮູບທີ່ສົ່ງໃຫ້ຜ່ານການແຕ່ງສີແລ້ວ.",
+  "th": "ไม่ใช่แค่บางภาพ — ทุกภาพที่ส่งให้ผ่านการแต่งสีแล้ว",
+  "en": "Not a selection — every delivered photo is colour graded."
+ },
+ "i3.d": {
+  "lo": "ວິດີໂອເລົ່າເລື່ອງແບບໜັງ ເລືອກເພງ ແລະ ແກ້ໄຂໄດ້.",
+  "th": "วิดีโอเล่าเรื่องแบบหนัง เลือกเพลงและแก้ไขได้",
+  "en": "A film-style story, your music, revisions included."
+ },
+ "i4.t": {
+  "lo": "ສະແກນໂຫຼດຮູບໜ້າງານ",
+  "th": "สแกนโหลดภาพหน้างาน",
+  "en": "On-site QR downloads"
+ },
+ "i4.d": {
+  "lo": "ແຂກສະແກນ QR ແລ້ວໂຫຼດຮູບໄດ້ເລີຍ (ແພັກເກັດ 3 ແລະ 4).",
+  "th": "แขกสแกน QR แล้วโหลดภาพได้เลย (แพ็กเกจ 3 และ 4)",
+  "en": "Guests scan a QR code and download photos on the spot (packages 3 & 4)."
+ },
+ "c.title": {
+  "lo": "ຈອງມື້ງານຂອງທ່ານ",
+  "th": "จองวันงานของคุณ",
+  "en": "Book your date"
+ },
+ "c.desc": {
+  "lo": "ມື້ງານໃນລະດູດອງເຕັມໄວ — ແນະນຳໃຫ້ຈອງລ່ວງໜ້າ. ສອບຖາມລາຍລະອຽດໄດ້ທຸກຊ່ອງທາງ.",
+  "th": "วันงานในช่วงฤดูแต่งงานเต็มเร็ว — แนะนำให้จองล่วงหน้า สอบถามได้ทุกช่องทาง",
+  "en": "Peak season fills up fast — book early. Reach us on any channel."
+ },
+ "c.call": {
+  "lo": "ໂທ",
+  "th": "โทร",
+  "en": "Call"
+ },
+ "p.title": {
+  "lo": "ຜົນງານຂອງພວກເຮົາ",
+  "th": "ผลงานของเรา",
+  "en": "Our work"
+ },
+ "p.desc": {
+  "lo": "ເລືອກອັລບັ້ມເພື່ອເບິ່ງຮູບທັງໝົດ — ກົດຮູບໃດກໍໄດ້ເພື່ອເບິ່ງເຕັມຈໍ.",
+  "th": "เลือกอัลบั้มเพื่อดูภาพทั้งหมด — กดภาพใดก็ได้เพื่อดูเต็มจอ",
+  "en": "Pick an album to see every photo — tap any photo for full screen."
+ },
+ "p.back": {
+  "lo": "ອັລບັ້ມທັງໝົດ",
+  "th": "อัลบั้มทั้งหมด",
+  "en": "All albums"
+ },
+ "p.post": {
+  "lo": "ເບິ່ງ post ຕົ້ນສະບັບ",
+  "th": "ดูโพสต์ต้นฉบับ",
+  "en": "View original post"
+ },
+ "p.fb.title": {
+  "lo": "post ຫຼ້າສຸດຈາກ Facebook",
+  "th": "โพสต์ล่าสุดจาก Facebook",
+  "en": "Latest from Facebook"
+ },
+ "p.fb.desc": {
+  "lo": "ດຶງມາຈາກເພຈ Facebook ຂອງ Thaiymuan Production ໂດຍກົງ — ລົງງານໃໝ່ເທິງເພຈ ໜ້ານີ້ອັບເດດຕາມເອງ.",
+  "th": "ดึงมาจากเพจ Facebook ของ Thaiymuan Production โดยตรง — โพสต์งานใหม่บนเพจ หน้านี้อัปเดตตามเอง",
+  "en": "Pulled live from the Thaiymuan Production Facebook page — post there and this updates itself."
+ },
+ "p.fb.lede": {
+  "lo": "ທຸກງານທີ່ພວກເຮົາຖ່າຍ ຈະລົງໃນເພຈ Facebook — ເຂົ້າໄປເບິ່ງຮູບເຕັມອັລບັ້ມ ແລະ ວິດີໂອ highlights ໄດ້ເລີຍ.",
+  "th": "ทุกงานที่เราถ่ายจะลงในเพจ Facebook — เข้าไปดูภาพเต็มอัลบั้มและวิดีโอ highlights ได้เลย",
+  "en": "Every wedding we shoot goes up on our Facebook page — full albums and highlight films are there."
+ },
+ "p.l1": {
+  "lo": "ຮູບງານດອງຈິງ ຈາກລູກຄ້າຂອງພວກເຮົາ",
+  "th": "ภาพงานแต่งจริงจากลูกค้าของเรา",
+  "en": "Real weddings from our clients"
+ },
+ "p.l3": {
+  "lo": "ໂປຣໂມຊັນ ແລະ ຂ່າວສານຫຼ້າສຸດ",
+  "th": "โปรโมชันและข่าวสารล่าสุด",
+  "en": "Promotions and news"
+ },
+ "p.cta1": {
+  "lo": "ເບິ່ງຜົນງານທັງໝົດ",
+  "th": "ดูผลงานทั้งหมด",
+  "en": "See all our work"
+ },
+ "p.cta2": {
+  "lo": "ເບິ່ງລາຄາແພັກເກັດ",
+  "th": "ดูราคาแพ็กเกจ",
+  "en": "See package prices"
+ },
+ "p.cta3": {
+  "lo": "ສອບຖາມ",
+  "th": "สอบถาม",
+  "en": "Ask us"
+ },
+ "p.skel": {
+  "lo": "ກຳລັງໂຫຼດ post ຈາກ Facebook…",
+  "th": "กำลังโหลดโพสต์จาก Facebook…",
+  "en": "Loading posts from Facebook…"
+ },
+ "p.skel2": {
+  "lo": "ຖ້າບໍ່ຂຶ້ນ ອາດຖືກ ad blocker ບລັອກ — ກົດ “ເບິ່ງຜົນງານທັງໝົດ”",
+  "th": "ถ้าไม่ขึ้น อาจถูก ad blocker บล็อก — กด “ดูผลงานทั้งหมด”",
+  "en": "If nothing appears an ad blocker may be stopping it — use “See all our work”"
+ },
+ "p.note": {
+  "lo": "ເນື້ອຫາຈາກເພຈ facebook.com/thaiymuan",
+  "th": "เนื้อหาจากเพจ facebook.com/thaiymuan",
+  "en": "Content from facebook.com/thaiymuan"
+ },
+ "doc.title.index": {
+  "lo": "Thaiymuan Production — ແພັກເກັດຖ່າຍຮູບງານດອງ",
+  "th": "Thaiymuan Production — แพ็กเกจถ่ายภาพงานแต่ง",
+  "en": "Thaiymuan Production — Wedding photography packages"
+ },
+ "doc.title.portfolio": {
+  "lo": "ຜົນງານ — Thaiymuan Production",
+  "th": "ผลงาน — Thaiymuan Production",
+  "en": "Our work — Thaiymuan Production"
+ },
+ "wa.generic": {
+  "lo": "ສະບາຍດີ ສອບຖາມຂໍ້ມູນແພັກເກັດ",
+  "th": "สวัสดีค่ะ สอบถามข้อมูลแพ็กเกจ",
+  "en": "Hello, I'd like to ask about your packages"
+ },
+ "wa.hello": {
+  "lo": "ສະບາຍດີ Thaiymuan Production",
+  "th": "สวัสดี Thaiymuan Production",
+  "en": "Hello Thaiymuan Production"
+ },
+ "wa.interested": {
+  "lo": "ຂ້ອຍສົນໃຈແພັກເກັດນີ້:",
+  "th": "สนใจแพ็กเกจนี้:",
+  "en": "I'm interested in this package:"
+ },
+ "wa.type": {
+  "lo": "ປະເພດ",
+  "th": "ประเภท",
+  "en": "Type"
+ },
+ "wa.pkg": {
+  "lo": "ແພັກເກັດ",
+  "th": "แพ็กเกจ",
+  "en": "Package"
+ },
+ "wa.time": {
+  "lo": "ເວລາ",
+  "th": "เวลา",
+  "en": "Hours"
+ },
+ "wa.price": {
+  "lo": "ລາຄາ",
+  "th": "ราคา",
+  "en": "Price"
+ },
+ "wa.normal": {
+  "lo": "ລາຄາປົກກະຕິ",
+  "th": "ราคาปกติ",
+  "en": "Regular price"
+ },
+ "wa.ask": {
+  "lo": "ຢາກສອບຖາມມື້ວ່າງ ແລະ ລາຍລະອຽດເພີ່ມເຕີມ",
+  "th": "อยากสอบถามวันว่างและรายละเอียดเพิ่มเติม",
+  "en": "Could you tell me your available dates and more details?"
+ },
+ "wa.photo": {
+  "lo": "ຖ່າຍຮູບ",
+  "th": "ถ่ายภาพ",
+  "en": "Photography"
+ },
+ "wa.video": {
+  "lo": "ຖ່າຍວິດີໂອ",
+  "th": "ถ่ายวิดีโอ",
+  "en": "Film"
+ },
+ "toast.copied": {
+  "lo": "ຄັດລອກເບີແລ້ວ ·",
+  "th": "คัดลอกเบอร์แล้ว ·",
+  "en": "Number copied ·"
+ },
+ "toast.phone": {
+  "lo": "ເບີໂທ:",
+  "th": "เบอร์โทร:",
+  "en": "Phone:"
+ },
+ "p.skel.full": {
+  "lo": "ກຳລັງໂຫຼດ post ຈາກ Facebook…<br>ຖ້າບໍ່ຂຶ້ນ ອາດຖືກ ad blocker ບລັອກ — ກົດ “ເບິ່ງຜົນງານທັງໝົດ”",
+  "th": "กำลังโหลดโพสต์จาก Facebook…<br>ถ้าไม่ขึ้น อาจถูก ad blocker บล็อก — กด “ดูผลงานทั้งหมด”",
+  "en": "Loading posts from Facebook…<br>If nothing appears an ad blocker may be stopping it — use “See all our work”"
+ },
+ "g.photos": {
+  "lo": "ຮູບ",
+  "th": "ภาพ",
+  "en": "photos"
+ },
+ "g.error": {
+  "lo": "ໂຫຼດອັລບັ້ມບໍ່ສຳເລັດ — ລອງໂຫຼດໜ້າຄືນໃໝ່.",
+  "th": "โหลดอัลบั้มไม่สำเร็จ — ลองโหลดหน้าใหม่",
+  "en": "Could not load the albums — please reload the page."
+ }
+}

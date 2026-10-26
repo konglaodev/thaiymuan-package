@@ -1,3 +1,62 @@
+// ===================== I18N (ລາວ / ไทย / English) =====================
+const LANGS = ['lo','th','en'];
+const DOC_KEY = document.getElementById('albums') ? 'doc.title.portfolio' : 'doc.title.index';
+let DICT = {}, LANG = 'lo';
+
+function t(key){
+  const e = DICT[key];
+  return e ? (e[LANG] || e.lo) : '';
+}
+function savedLang(){
+  try { const v = localStorage.getItem('lang'); if (LANGS.includes(v)) return v; } catch(e){}
+  const n = (navigator.language || 'lo').toLowerCase();
+  if (n.startsWith('th')) return 'th';
+  if (n.startsWith('lo')) return 'lo';
+  return n.startsWith('en') ? 'en' : 'lo';
+}
+// ປ່ຽນສະເພາະ text node ທຳອິດ — ບໍ່ໃຫ້ icon svg ຂ້າງໃນຫາຍ
+function setText(el, val){
+  const tn = [...el.childNodes].find(n => n.nodeType === 3 && n.textContent.trim());
+  if (tn) tn.textContent = val; else el.prepend(document.createTextNode(val));
+}
+function applyLang(lang){
+  LANG = LANGS.includes(lang) ? lang : 'lo';
+  try { localStorage.setItem('lang', LANG); } catch(e){}
+  document.documentElement.lang = LANG;
+
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const v = t(el.dataset.i18n); if (v) setText(el, v);
+  });
+  document.querySelectorAll('[data-i18n-html]').forEach(el => {
+    const v = t(el.dataset.i18nHtml); if (v) el.innerHTML = v;
+  });
+  const dt = t(DOC_KEY); if (dt) document.title = dt;
+
+  // ປຸ່ມພາສາ
+  document.querySelectorAll('.lang button').forEach(b =>
+    b.setAttribute('aria-pressed', b.dataset.lang === LANG));
+
+  // ລິ້ງ WhatsApp ທົ່ວໄປ (ບໍ່ລວມປຸ່ມໃນ card ແພັກເກັດ)
+  document.querySelectorAll('a[href^="https://wa.me/"]').forEach(a => {
+    if (a.closest('.pane')) return;
+    a.href = 'https://wa.me/' + WA_NUMBER + '?text=' + encodeURIComponent(t('wa.generic'));
+  });
+
+  if (typeof buildCardWA === 'function') buildCardWA();
+  if (typeof renderAlbums === 'function') renderAlbums();
+
+  document.documentElement.classList.remove('i18n-pending');
+  document.documentElement.classList.add('i18n-ready');
+}
+
+document.querySelectorAll('.lang button').forEach(b =>
+  b.addEventListener('click', () => applyLang(b.dataset.lang)));
+
+fetch('assets/i18n.json')
+  .then(r => r.json())
+  .then(d => { DICT = d; applyLang(savedLang()); })
+  .catch(() => { document.documentElement.classList.remove('i18n-pending'); });
+
 // year
 document.getElementById('yr').textContent = new Date().getFullYear();
 
@@ -98,8 +157,8 @@ document.querySelectorAll('a[href^="tel:"]').forEach(a => {
   a.addEventListener('click', e => {
     if (canDial) return;                       // ມືຖື / tablet → ປ່ອຍໃຫ້ໂທປົກກະຕິ
     e.preventDefault();
-    const done = () => toast('ຄັດລອກເບີແລ້ວ · ' + PHONE_DISPLAY);
-    const fail = () => toast('ເບີໂທ: ' + PHONE_DISPLAY);
+    const done = () => toast(t('toast.copied') + ' ' + PHONE_DISPLAY);
+    const fail = () => toast(t('toast.phone') + ' ' + PHONE_DISPLAY);
     if (navigator.clipboard?.writeText) {
       navigator.clipboard.writeText(PHONE_DISPLAY).then(done).catch(fail);
     } else { fail(); }
@@ -109,73 +168,34 @@ document.querySelectorAll('a[href^="tel:"]').forEach(a => {
 // ປຸ່ມແພັກເກັດ → WhatsApp ພ້ອມຂໍ້ມູນແພັກເກັດທີ່ເລືອກ
 const WA_NUMBER = '8562055959236';
 
-document.querySelectorAll('.pane .card').forEach(card => {
-  const btn = card.querySelector('a.btn');
-  if (!btn) return;
+function buildCardWA(){
+  document.querySelectorAll('.pane .card').forEach(card => {
+    const btn = card.querySelector('a.btn');
+    if (!btn) return;
 
-  const type  = card.closest('.pane').id === 'pane-video' ? 'ຖ່າຍວິດີໂອ' : 'ຖ່າຍຮູບ';
-  const name  = card.querySelector('h3').textContent.trim();
-  const price = card.querySelector('.price b').textContent.trim();
-  const hours = [...card.querySelectorAll('.hours span')].map(h => h.textContent.trim()).join(' ແລະ ');
-  const was  = card.querySelector('.price s');
-  const save = card.querySelector('.save');
+    const type  = card.closest('.pane').id === 'pane-video' ? t('wa.video') : t('wa.photo');
+    const nameEl  = card.querySelector('h3');
+    const name  = nameEl ? nameEl.textContent.trim() : '';
+    const price = card.querySelector('.price b').textContent.trim();
+    const hours = [...card.querySelectorAll('.hours span')].map(h => h.textContent.trim()).join(' / ');
+    const was   = card.querySelector('.price s');
+    const save  = card.querySelector('.save');
 
-  const msg = [
-    'ສະບາຍດີ Thaiymuan Production',
-    '',
-    'ຂ້ອຍສົນໃຈແພັກເກັດນີ້:',
-    'ປະເພດ: ' + type,
-    'ແພັກເກັດ: ' + name,
-    'ເວລາ: ' + hours,
-    'ລາຄາ: ' + price + ' ฿',
-    ...(was ? ['ລາຄາປົກກະຕິ: ' + was.textContent.trim() + ' (' + save.textContent.trim() + ')'] : []),
-    '',
-    'ຢາກສອບຖາມມື້ວ່າງ ແລະ ລາຍລະອຽດເພີ່ມເຕີມ'
-  ].join('\n');
+    const msg = [
+      t('wa.hello'), '',
+      t('wa.interested'),
+      t('wa.type')  + ': ' + type,
+      t('wa.pkg')   + ': ' + name,
+      t('wa.time')  + ': ' + hours,
+      t('wa.price') + ': ' + price + ' ฿',
+      ...(was ? [t('wa.normal') + ': ' + was.textContent.trim() + ' (' + save.textContent.trim() + ')'] : []),
+      '', t('wa.ask')
+    ].join('\n');
 
-  btn.href = 'https://wa.me/' + WA_NUMBER + '?text=' + encodeURIComponent(msg);
-  btn.target = '_blank';
-  btn.rel = 'noopener';
-});
-
-// Facebook page timeline — ໂຫຼດເມື່ອ scroll ມາເຖິງເທົ່ານັ້ນ (ບໍ່ຖ່ວງການເປີດໜ້າ)
-const FB_PAGE = 'https://www.facebook.com/thaiymuan';
-const fbWrap = document.getElementById('fbWrap');
-let fbW = 0;
-
-function fbLoad(){
-  const w = Math.max(180, Math.min(500, Math.floor(fbWrap.clientWidth)));
-  if (w === fbW) return;                       // ຂະໜາດເທົ່າເກົ່າ → ບໍ່ຕ້ອງໂຫຼດຄືນ
-  fbW = w;
-  const src = 'https://www.facebook.com/plugins/page.php'
-    + '?href=' + encodeURIComponent(FB_PAGE)
-    + '&tabs=timeline&width=' + w + '&height=720'
-    + '&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=false';
-  let f = fbWrap.querySelector('iframe');
-  if (!f){
-    f = document.createElement('iframe');
-    f.title = 'Facebook — ຖ່າຍມ່ວນ Thaiymuan';
-    f.loading = 'lazy';
-    f.setAttribute('scrolling','no');
-    f.setAttribute('frameborder','0');
-    f.allow = 'encrypted-media';
-    f.addEventListener('load', () => fbWrap.classList.add('loaded'));
-    fbWrap.appendChild(f);
-  }
-  f.width = w; f.height = 720; f.src = src;
-  fbWrap.style.minHeight = '720px';
-}
-
-if (fbWrap){
-  new IntersectionObserver((es, ob) => {
-    if (es[0].isIntersecting){ fbLoad(); ob.disconnect(); }
-  }, {rootMargin:'300px'}).observe(fbWrap);
-
-  let fbT;
-  addEventListener('resize', () => {
-    clearTimeout(fbT);
-    fbT = setTimeout(() => { if (fbWrap.querySelector('iframe')) fbLoad(); }, 400);
-  }, {passive:true});
+    btn.href = 'https://wa.me/' + WA_NUMBER + '?text=' + encodeURIComponent(msg);
+    btn.target = '_blank';
+    btn.rel = 'noopener';
+  });
 }
 
 // ວັດຄວາມສູງແຖບລຸ່ມມືຖື → ກັນບໍ່ໃຫ້ມັນບັງເນື້ອຫາ
@@ -202,31 +222,42 @@ if (albumsEl){
   const vCount = document.getElementById('vCount');
   let album = null, idx = 0;
 
+  let ALBUMS = [];
+  const aTitle = a => a['title_' + LANG] || a.title;
+  const aDesc  = a => a['desc_'  + LANG] || a.desc;
+
+  window.renderAlbums = function(){
+    if (!ALBUMS.length) return;
+    albumsEl.innerHTML = ALBUMS.map((a, i) => `
+      <button class="album" type="button" data-i="${i}">
+        <span class="n">${a.photos.length} ${t('g.photos')}</span>
+        <span class="ph"><img src="${a.cover}" alt="${aTitle(a)}" loading="lazy"></span>
+        <span class="cap"><h3>${aTitle(a)}</h3><p>${aDesc(a)}</p></span>
+      </button>`).join('');
+    albumsEl.querySelectorAll('.album').forEach(btn =>
+      btn.addEventListener('click', () => openAlbum(ALBUMS[+btn.dataset.i])));
+    if (album){                       // ອັລບັ້ມທີ່ເປີດຢູ່ → ປ່ຽນຫົວຂໍ້ຕາມ
+      document.getElementById('albumTitle').textContent = aTitle(album);
+      document.getElementById('albumDesc').textContent  = aDesc(album);
+    }
+  };
+
   fetch('gallery/albums.json')
     .then(r => r.json())
-    .then(data => {
-      albumsEl.innerHTML = data.albums.map((a, i) => `
-        <button class="album" type="button" data-i="${i}">
-          <span class="n">${a.photos.length} ຮູບ</span>
-          <span class="ph"><img src="${a.cover}" alt="${a.title}" loading="lazy"></span>
-          <span class="cap"><h3>${a.title}</h3><p>${a.desc}</p></span>
-        </button>`).join('');
-      albumsEl.querySelectorAll('.album').forEach(btn =>
-        btn.addEventListener('click', () => openAlbum(data.albums[+btn.dataset.i])));
-    })
+    .then(data => { ALBUMS = data.albums; renderAlbums(); })
     .catch(() => {
-      albumsEl.innerHTML = '<p style="color:var(--muted)">ໂຫຼດອັລບັ້ມບໍ່ສຳເລັດ — ລອງໂຫຼດໜ້າຄືນໃໝ່.</p>';
+      albumsEl.innerHTML = '<p style="color:var(--muted)">' + (t('g.error') || 'ໂຫຼດອັລບັ້ມບໍ່ສຳເລັດ') + '</p>';
     });
 
   function openAlbum(a){
     album = a;
-    document.getElementById('albumTitle').textContent = a.title;
-    document.getElementById('albumDesc').textContent  = a.desc;
+    document.getElementById('albumTitle').textContent = aTitle(a);
+    document.getElementById('albumDesc').textContent  = aDesc(a);
     const link = document.getElementById('albumPost');
     if (a.post){ link.href = a.post; link.hidden = false; } else { link.hidden = true; }
     shotsEl.innerHTML = a.photos.map((ph, i) => `
       <button type="button" data-i="${i}">
-        <img src="${ph.thumb}" alt="${a.title} ${i + 1}" loading="lazy" width="${ph.w}" height="${ph.h}">
+        <img src="${ph.thumb}" alt="${aTitle(a)} ${i + 1}" loading="lazy" width="${ph.w}" height="${ph.h}">
       </button>`).join('');
     shotsEl.querySelectorAll('button').forEach(b =>
       b.addEventListener('click', () => openViewer(+b.dataset.i)));
@@ -250,7 +281,7 @@ if (albumsEl){
   function show(){
     const ph = album.photos[idx];
     vImg.src = ph.src;
-    vImg.alt = album.title + ' ' + (idx + 1);
+    vImg.alt = aTitle(album) + ' ' + (idx + 1);
     vCount.textContent = (idx + 1) + ' / ' + album.photos.length;
   }
   const step = d => { idx = (idx + d + album.photos.length) % album.photos.length; show(); };

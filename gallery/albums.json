@@ -43,7 +43,11 @@
      "h": 1066
     }
    ],
-   "post": "https://www.facebook.com/share/p/1Di45Udweh/"
+   "post": "https://www.facebook.com/share/p/1Di45Udweh/",
+   "title_th": "Phomma — Dokmali",
+   "title_en": "Phomma — Dokmali",
+   "desc_th": "Wedding ceremony · 8 พฤษภาคม",
+   "desc_en": "Wedding ceremony · 8 May"
   },
   {
    "id": "vannapha-phonesavanh-baci",
@@ -88,7 +92,11 @@
      "h": 1600
     }
    ],
-   "post": "https://www.facebook.com/share/p/19uCGzUGPr/"
+   "post": "https://www.facebook.com/share/p/19uCGzUGPr/",
+   "title_th": "Vannapha & Phonesavanh · พิธีบายศรีสู่ขวัญ",
+   "title_en": "Vannapha & Phonesavanh · Baci ceremony",
+   "desc_th": "Wedding ceremony 27/06/26 · 12 กรกฎาคม",
+   "desc_en": "Wedding ceremony 27/06/26 · 12 July"
   },
   {
    "id": "vannapha-phonesavanh-portrait",
@@ -133,7 +141,11 @@
      "h": 1600
     }
    ],
-   "post": "https://www.facebook.com/share/p/1DqXiJqCiy/"
+   "post": "https://www.facebook.com/share/p/1DqXiJqCiy/",
+   "title_th": "Vannapha & Phonesavanh · ชุดลาวและชุดเจ้าสาว",
+   "title_en": "Vannapha & Phonesavanh · Lao dress & bridal gown",
+   "desc_th": "Wedding ceremony · 15 กรกฎาคม",
+   "desc_en": "Wedding ceremony · 15 July"
   },
   {
    "id": "nico-mimie",
@@ -178,7 +190,11 @@
      "h": 1600
     }
    ],
-   "post": "https://www.facebook.com/share/p/1DZEXSKDWs/"
+   "post": "https://www.facebook.com/share/p/1DZEXSKDWs/",
+   "title_th": "Nico V Sanaphanh & Mimie Sirikool",
+   "title_en": "Nico V Sanaphanh & Mimie Sirikool",
+   "desc_th": "Wedding ceremony · Asean Palace · 13 พฤศจิกายน 2025",
+   "desc_en": "Wedding ceremony · Asean Palace · 13 Nov 2025"
   },
   {
    "id": "surapon-nithjarlar",
@@ -223,7 +239,11 @@
      "h": 1066
     }
    ],
-   "post": "https://www.facebook.com/share/p/1JoyKrEpgF/"
+   "post": "https://www.facebook.com/share/p/1JoyKrEpgF/",
+   "title_th": "Surapon & Nithjarlar",
+   "title_en": "Surapon & Nithjarlar",
+   "desc_th": "Wedding ceremony · 22 ตุลาคม 2025",
+   "desc_en": "Wedding ceremony · 22 Oct 2025"
   },
   {
    "id": "event-grand-opening",
@@ -261,7 +281,11 @@
      "w": 1440,
      "h": 960
     }
-   ]
+   ],
+   "title_th": "Grand Opening — Asean Auto",
+   "title_en": "Grand Opening — Asean Auto",
+   "desc_th": "งานเปิดร้านและอีเวนต์",
+   "desc_en": "Shop opening & corporate events"
   }
  ]
 }
