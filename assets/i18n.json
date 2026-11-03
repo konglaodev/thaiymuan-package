@@ -70,9 +70,9 @@
   "en": "Ask on WhatsApp"
  },
  "stat.from": {
-  "lo": "ຖ່າຍຮູບ ເລີ່ມຕົ້ນ (ຫຼຸດແລ້ວ)",
-  "th": "ถ่ายภาพ เริ่มต้น (ลดแล้ว)",
-  "en": "Photography from (after discount)"
+  "lo": "ຖ່າຍຮູບ ເລີ່ມຕົ້ນ",
+  "th": "ถ่ายภาพ เริ่มต้น",
+  "en": "Photography from"
  },
  "stat.crew": {
   "lo": "ຊ່າງຕໍ່ງານ",
